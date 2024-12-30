@@ -1,0 +1,7 @@
+C:\Users\Admin\Desktop\Cs_projects\24_12_30_text_output\24_12_30_text_output\bin\Debug\24_12_30_text_output.exe.config
+C:\Users\Admin\Desktop\Cs_projects\24_12_30_text_output\24_12_30_text_output\bin\Debug\24_12_30_text_output.exe
+C:\Users\Admin\Desktop\Cs_projects\24_12_30_text_output\24_12_30_text_output\bin\Debug\24_12_30_text_output.pdb
+C:\Users\Admin\Desktop\Cs_projects\24_12_30_text_output\24_12_30_text_output\obj\Debug\24_12_30_text_output.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Cs_projects\24_12_30_text_output\24_12_30_text_output\obj\Debug\24_12_30_text_output.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Cs_projects\24_12_30_text_output\24_12_30_text_output\obj\Debug\24_12_30_text_output.exe
+C:\Users\Admin\Desktop\Cs_projects\24_12_30_text_output\24_12_30_text_output\obj\Debug\24_12_30_text_output.pdb

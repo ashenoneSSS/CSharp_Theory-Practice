@@ -1,0 +1,7 @@
+C:\Users\Admin\Desktop\Cs_projects\try_11\try_11\bin\Debug\try_11.exe.config
+C:\Users\Admin\Desktop\Cs_projects\try_11\try_11\bin\Debug\try_11.exe
+C:\Users\Admin\Desktop\Cs_projects\try_11\try_11\bin\Debug\try_11.pdb
+C:\Users\Admin\Desktop\Cs_projects\try_11\try_11\obj\Debug\try_11.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Cs_projects\try_11\try_11\obj\Debug\try_11.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Cs_projects\try_11\try_11\obj\Debug\try_11.exe
+C:\Users\Admin\Desktop\Cs_projects\try_11\try_11\obj\Debug\try_11.pdb
