@@ -1,0 +1,7 @@
+C:\Users\Admin\Desktop\Cs_projects\25_01_03_string-interpolation\25_01_03_string-interpolation\bin\Debug\25_01_03_string-interpolation.exe.config
+C:\Users\Admin\Desktop\Cs_projects\25_01_03_string-interpolation\25_01_03_string-interpolation\bin\Debug\25_01_03_string-interpolation.exe
+C:\Users\Admin\Desktop\Cs_projects\25_01_03_string-interpolation\25_01_03_string-interpolation\bin\Debug\25_01_03_string-interpolation.pdb
+C:\Users\Admin\Desktop\Cs_projects\25_01_03_string-interpolation\25_01_03_string-interpolation\obj\Debug\25_01_03_string-interpolation.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Cs_projects\25_01_03_string-interpolation\25_01_03_string-interpolation\obj\Debug\25_01_03_string-interpolation.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Cs_projects\25_01_03_string-interpolation\25_01_03_string-interpolation\obj\Debug\25_01_03_string-interpolation.exe
+C:\Users\Admin\Desktop\Cs_projects\25_01_03_string-interpolation\25_01_03_string-interpolation\obj\Debug\25_01_03_string-interpolation.pdb

@@ -1,0 +1,7 @@
+C:\Users\Admin\Desktop\Cs_projects\25_01_02_composite-formatting\25_01_02_composite-formatting\bin\Debug\25_01_02_composite-formatting.exe.config
+C:\Users\Admin\Desktop\Cs_projects\25_01_02_composite-formatting\25_01_02_composite-formatting\bin\Debug\25_01_02_composite-formatting.exe
+C:\Users\Admin\Desktop\Cs_projects\25_01_02_composite-formatting\25_01_02_composite-formatting\bin\Debug\25_01_02_composite-formatting.pdb
+C:\Users\Admin\Desktop\Cs_projects\25_01_02_composite-formatting\25_01_02_composite-formatting\obj\Debug\25_01_02_composite-formatting.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Cs_projects\25_01_02_composite-formatting\25_01_02_composite-formatting\obj\Debug\25_01_02_composite-formatting.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Cs_projects\25_01_02_composite-formatting\25_01_02_composite-formatting\obj\Debug\25_01_02_composite-formatting.exe
+C:\Users\Admin\Desktop\Cs_projects\25_01_02_composite-formatting\25_01_02_composite-formatting\obj\Debug\25_01_02_composite-formatting.pdb
