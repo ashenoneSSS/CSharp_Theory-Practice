@@ -1,0 +1,7 @@
+C:\Users\Admin\Desktop\Cs_projects\25_01_23_data-type-hierarchy\25_01_23_data-type-hierarchy\bin\Debug\25_01_23_data-type-hierarchy.exe.config
+C:\Users\Admin\Desktop\Cs_projects\25_01_23_data-type-hierarchy\25_01_23_data-type-hierarchy\bin\Debug\25_01_23_data-type-hierarchy.exe
+C:\Users\Admin\Desktop\Cs_projects\25_01_23_data-type-hierarchy\25_01_23_data-type-hierarchy\bin\Debug\25_01_23_data-type-hierarchy.pdb
+C:\Users\Admin\Desktop\Cs_projects\25_01_23_data-type-hierarchy\25_01_23_data-type-hierarchy\obj\Debug\25_01_23_data-type-hierarchy.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Cs_projects\25_01_23_data-type-hierarchy\25_01_23_data-type-hierarchy\obj\Debug\25_01_23_data-type-hierarchy.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Cs_projects\25_01_23_data-type-hierarchy\25_01_23_data-type-hierarchy\obj\Debug\25_01_23_data-type-hierarchy.exe
+C:\Users\Admin\Desktop\Cs_projects\25_01_23_data-type-hierarchy\25_01_23_data-type-hierarchy\obj\Debug\25_01_23_data-type-hierarchy.pdb
