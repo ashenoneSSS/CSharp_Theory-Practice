@@ -10,8 +10,11 @@ namespace try_11
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            
+            int a = 3;
+            const int b = 2;
+            double r = (double)(a)/b;
+
+            Console.WriteLine(r);
         }
     }
 }

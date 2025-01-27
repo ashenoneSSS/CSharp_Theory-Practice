@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\Cs_projects\\25_01_27_operator-precedence_associativity\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A3CEA80D-94B2-4041-962E-8A393E79D274}|25_01_27_operator-precedence_associativity\\25_01_27_operator-precedence_associativity.csproj|c:\\users\\admin\\desktop\\cs_projects\\25_01_27_operator-precedence_associativity\\25_01_27_operator-precedence_associativity\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3CEA80D-94B2-4041-962E-8A393E79D274}|25_01_27_operator-precedence_associativity\\25_01_27_operator-precedence_associativity.csproj|solutionrelative:25_01_27_operator-precedence_associativity\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Cs_projects\\25_01_27_operator-precedence_associativity\\25_01_27_operator-precedence_associativity\\Program.cs",
+              "RelativeDocumentMoniker": "25_01_27_operator-precedence_associativity\\Program.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Cs_projects\\25_01_27_operator-precedence_associativity\\25_01_27_operator-precedence_associativity\\Program.cs",
+              "RelativeToolTip": "25_01_27_operator-precedence_associativity\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAQwDAAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T20:51:27.047Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
