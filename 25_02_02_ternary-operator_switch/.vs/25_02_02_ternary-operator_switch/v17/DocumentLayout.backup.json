@@ -1,0 +1,55 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\Cs_projects\\25_02_02_ternary-operator_switch\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1DD32D48-D747-4304-B693-FAF98C540032}|25_02_02_ternary-operator_switch\\25_02_02_ternary-operator_switch.csproj|c:\\users\\admin\\desktop\\cs_projects\\25_02_02_ternary-operator_switch\\25_02_02_ternary-operator_switch\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DD32D48-D747-4304-B693-FAF98C540032}|25_02_02_ternary-operator_switch\\25_02_02_ternary-operator_switch.csproj|solutionrelative:25_02_02_ternary-operator_switch\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|25_02_02_ternary-operator_switch||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DD32D48-D747-4304-B693-FAF98C540032}|25_02_02_ternary-operator_switch\\25_02_02_ternary-operator_switch.csproj|c:\\users\\admin\\desktop\\cs_projects\\25_02_02_ternary-operator_switch\\25_02_02_ternary-operator_switch\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|a54ad834-9219-4aa6-b589-607af21c3e26"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "25_02_02_ternary-operator_switch",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Cs_projects\\25_02_02_ternary-operator_switch\\25_02_02_ternary-operator_switch\\25_02_02_ternary-operator_switch.csproj",
+              "RelativeDocumentMoniker": "25_02_02_ternary-operator_switch\\25_02_02_ternary-operator_switch.csproj",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Cs_projects\\25_02_02_ternary-operator_switch\\25_02_02_ternary-operator_switch\\25_02_02_ternary-operator_switch.csproj",
+              "RelativeToolTip": "25_02_02_ternary-operator_switch\\25_02_02_ternary-operator_switch.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-02-02T20:55:12.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Cs_projects\\25_02_02_ternary-operator_switch\\25_02_02_ternary-operator_switch\\Program.cs",
+              "RelativeDocumentMoniker": "25_02_02_ternary-operator_switch\\Program.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Cs_projects\\25_02_02_ternary-operator_switch\\25_02_02_ternary-operator_switch\\Program.cs",
+              "RelativeToolTip": "25_02_02_ternary-operator_switch\\Program.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAuwFMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T15:49:21.717Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

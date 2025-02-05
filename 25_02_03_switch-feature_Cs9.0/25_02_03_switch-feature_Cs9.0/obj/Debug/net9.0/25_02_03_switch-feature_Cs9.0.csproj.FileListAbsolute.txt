@@ -1,0 +1,15 @@
+C:\Users\Admin\Desktop\Cs_projects\25_02_03_switch-feature_Cs9.0\25_02_03_switch-feature_Cs9.0\bin\Debug\net9.0\25_02_03_switch-feature_Cs9.0.exe
+C:\Users\Admin\Desktop\Cs_projects\25_02_03_switch-feature_Cs9.0\25_02_03_switch-feature_Cs9.0\bin\Debug\net9.0\25_02_03_switch-feature_Cs9.0.deps.json
+C:\Users\Admin\Desktop\Cs_projects\25_02_03_switch-feature_Cs9.0\25_02_03_switch-feature_Cs9.0\bin\Debug\net9.0\25_02_03_switch-feature_Cs9.0.runtimeconfig.json
+C:\Users\Admin\Desktop\Cs_projects\25_02_03_switch-feature_Cs9.0\25_02_03_switch-feature_Cs9.0\bin\Debug\net9.0\25_02_03_switch-feature_Cs9.0.dll
+C:\Users\Admin\Desktop\Cs_projects\25_02_03_switch-feature_Cs9.0\25_02_03_switch-feature_Cs9.0\bin\Debug\net9.0\25_02_03_switch-feature_Cs9.0.pdb
+C:\Users\Admin\Desktop\Cs_projects\25_02_03_switch-feature_Cs9.0\25_02_03_switch-feature_Cs9.0\obj\Debug\net9.0\25_02_03_switch-feature_Cs9.0.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\Cs_projects\25_02_03_switch-feature_Cs9.0\25_02_03_switch-feature_Cs9.0\obj\Debug\net9.0\25_02_03_switch-feature_Cs9.0.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\Cs_projects\25_02_03_switch-feature_Cs9.0\25_02_03_switch-feature_Cs9.0\obj\Debug\net9.0\25_02_03_switch-feature_Cs9.0.AssemblyInfo.cs
+C:\Users\Admin\Desktop\Cs_projects\25_02_03_switch-feature_Cs9.0\25_02_03_switch-feature_Cs9.0\obj\Debug\net9.0\25_02_03_switch-feature_Cs9.0.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Cs_projects\25_02_03_switch-feature_Cs9.0\25_02_03_switch-feature_Cs9.0\obj\Debug\net9.0\25_02_03_switch-feature_Cs9.0.sourcelink.json
+C:\Users\Admin\Desktop\Cs_projects\25_02_03_switch-feature_Cs9.0\25_02_03_switch-feature_Cs9.0\obj\Debug\net9.0\25_02_03_switch-feature_Cs9.0.dll
+C:\Users\Admin\Desktop\Cs_projects\25_02_03_switch-feature_Cs9.0\25_02_03_switch-feature_Cs9.0\obj\Debug\net9.0\refint\25_02_03_switch-feature_Cs9.0.dll
+C:\Users\Admin\Desktop\Cs_projects\25_02_03_switch-feature_Cs9.0\25_02_03_switch-feature_Cs9.0\obj\Debug\net9.0\25_02_03_switch-feature_Cs9.0.pdb
+C:\Users\Admin\Desktop\Cs_projects\25_02_03_switch-feature_Cs9.0\25_02_03_switch-feature_Cs9.0\obj\Debug\net9.0\25_02_03_switch-feature_Cs9.0.genruntimeconfig.cache
+C:\Users\Admin\Desktop\Cs_projects\25_02_03_switch-feature_Cs9.0\25_02_03_switch-feature_Cs9.0\obj\Debug\net9.0\ref\25_02_03_switch-feature_Cs9.0.dll

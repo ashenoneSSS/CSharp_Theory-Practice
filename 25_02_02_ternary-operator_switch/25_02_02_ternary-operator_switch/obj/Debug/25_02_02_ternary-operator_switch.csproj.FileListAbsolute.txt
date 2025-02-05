@@ -1,0 +1,7 @@
+C:\Users\Admin\Desktop\Cs_projects\25_02_02_ternary-operator_switch\25_02_02_ternary-operator_switch\bin\Debug\25_02_02_ternary-operator_switch.exe.config
+C:\Users\Admin\Desktop\Cs_projects\25_02_02_ternary-operator_switch\25_02_02_ternary-operator_switch\bin\Debug\25_02_02_ternary-operator_switch.exe
+C:\Users\Admin\Desktop\Cs_projects\25_02_02_ternary-operator_switch\25_02_02_ternary-operator_switch\bin\Debug\25_02_02_ternary-operator_switch.pdb
+C:\Users\Admin\Desktop\Cs_projects\25_02_02_ternary-operator_switch\25_02_02_ternary-operator_switch\obj\Debug\25_02_02_ternary-operator_switch.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Cs_projects\25_02_02_ternary-operator_switch\25_02_02_ternary-operator_switch\obj\Debug\25_02_02_ternary-operator_switch.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Cs_projects\25_02_02_ternary-operator_switch\25_02_02_ternary-operator_switch\obj\Debug\25_02_02_ternary-operator_switch.exe
+C:\Users\Admin\Desktop\Cs_projects\25_02_02_ternary-operator_switch\25_02_02_ternary-operator_switch\obj\Debug\25_02_02_ternary-operator_switch.pdb
