@@ -12,7 +12,12 @@ namespace try_11
 
         static void Main(string[] args)
         {
+            
 
+            char n = 'B';
+            int g = n;
+
+            Console.WriteLine(g);
             
 
         }
