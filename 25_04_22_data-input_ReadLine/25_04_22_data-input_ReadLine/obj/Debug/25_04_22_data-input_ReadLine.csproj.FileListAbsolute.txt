@@ -1,0 +1,7 @@
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_04_22_data-input_ReadLine\25_04_22_data-input_ReadLine\bin\Debug\25_04_22_data-input_ReadLine.exe.config
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_04_22_data-input_ReadLine\25_04_22_data-input_ReadLine\bin\Debug\25_04_22_data-input_ReadLine.exe
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_04_22_data-input_ReadLine\25_04_22_data-input_ReadLine\bin\Debug\25_04_22_data-input_ReadLine.pdb
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_04_22_data-input_ReadLine\25_04_22_data-input_ReadLine\obj\Debug\25_04_22_data-input_ReadLine.csproj.AssemblyReference.cache
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_04_22_data-input_ReadLine\25_04_22_data-input_ReadLine\obj\Debug\25_04_22_data-input_ReadLine.csproj.CoreCompileInputs.cache
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_04_22_data-input_ReadLine\25_04_22_data-input_ReadLine\obj\Debug\25_04_22_data-input_ReadLine.exe
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_04_22_data-input_ReadLine\25_04_22_data-input_ReadLine\obj\Debug\25_04_22_data-input_ReadLine.pdb

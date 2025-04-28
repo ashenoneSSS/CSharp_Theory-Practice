@@ -1,0 +1,7 @@
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\try-draft444\try-draft444\bin\Debug\try-draft444.exe.config
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\try-draft444\try-draft444\bin\Debug\try-draft444.exe
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\try-draft444\try-draft444\bin\Debug\try-draft444.pdb
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\try-draft444\try-draft444\obj\Debug\try-draft444.csproj.AssemblyReference.cache
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\try-draft444\try-draft444\obj\Debug\try-draft444.csproj.CoreCompileInputs.cache
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\try-draft444\try-draft444\obj\Debug\try-draft444.exe
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\try-draft444\try-draft444\obj\Debug\try-draft444.pdb

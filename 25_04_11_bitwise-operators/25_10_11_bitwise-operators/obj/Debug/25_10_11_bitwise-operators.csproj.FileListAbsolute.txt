@@ -1,0 +1,7 @@
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_10_11_bitwise-operators\25_10_11_bitwise-operators\bin\Debug\25_10_11_bitwise-operators.exe.config
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_10_11_bitwise-operators\25_10_11_bitwise-operators\bin\Debug\25_10_11_bitwise-operators.exe
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_10_11_bitwise-operators\25_10_11_bitwise-operators\bin\Debug\25_10_11_bitwise-operators.pdb
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_10_11_bitwise-operators\25_10_11_bitwise-operators\obj\Debug\25_10_11_bitwise-operators.csproj.AssemblyReference.cache
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_10_11_bitwise-operators\25_10_11_bitwise-operators\obj\Debug\25_10_11_bitwise-operators.csproj.CoreCompileInputs.cache
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_10_11_bitwise-operators\25_10_11_bitwise-operators\obj\Debug\25_10_11_bitwise-operators.exe
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_10_11_bitwise-operators\25_10_11_bitwise-operators\obj\Debug\25_10_11_bitwise-operators.pdb

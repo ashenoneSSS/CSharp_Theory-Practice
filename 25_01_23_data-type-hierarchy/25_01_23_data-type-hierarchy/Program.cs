@@ -23,7 +23,7 @@ namespace _25_01_23_data_type_hierarchy
 
 
 
-            // Data type hierarchy (Startштп with the highest type):
+            // Data type hierarchy (Starting with the highest type):
             // double
             // float
             // ulong
