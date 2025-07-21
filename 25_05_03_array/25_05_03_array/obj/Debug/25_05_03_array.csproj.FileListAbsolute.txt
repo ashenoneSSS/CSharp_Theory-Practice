@@ -1,0 +1,7 @@
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_05_03_array\25_05_03_array\bin\Debug\25_05_03_array.exe.config
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_05_03_array\25_05_03_array\bin\Debug\25_05_03_array.exe
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_05_03_array\25_05_03_array\bin\Debug\25_05_03_array.pdb
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_05_03_array\25_05_03_array\obj\Debug\25_05_03_array.csproj.AssemblyReference.cache
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_05_03_array\25_05_03_array\obj\Debug\25_05_03_array.csproj.CoreCompileInputs.cache
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_05_03_array\25_05_03_array\obj\Debug\25_05_03_array.exe
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_05_03_array\25_05_03_array\obj\Debug\25_05_03_array.pdb

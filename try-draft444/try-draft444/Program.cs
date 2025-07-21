@@ -8,22 +8,26 @@ namespace try_draft444
 {
     internal class Program
     {
+        static bool isPrime(int n)
+        {
+            for (int i = 3; i < n; i++)
+            {
+                if (n% i == 0)
+                    return false;
+            }
+            return true;
+        }
         static void Main(string[] args)
         {
-            int fn2 = 0, fn1 = 1, fn = 1;
+            
 
-            while (fn2<=74000)
+            for (int i = 2; i < 100; i++)
             {
-                fn2 = fn1+fn;
-
-                
-                fn = fn1;
-                fn1 = fn2;
-
-
+                if(isPrime(i) == true)
+                {
+                    Console.WriteLine(i);
+                }
             }
-
-            Console.Write(fn2 + "  ");
 
             Console.ReadLine();
         }

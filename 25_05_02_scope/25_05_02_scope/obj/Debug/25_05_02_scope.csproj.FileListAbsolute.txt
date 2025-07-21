@@ -1,0 +1,7 @@
+C:\Users\ne_kazual\source\repos\25_05_02_scope\25_05_02_scope\obj\Debug\25_05_02_scope.csproj.AssemblyReference.cache
+C:\Users\ne_kazual\source\repos\25_05_02_scope\25_05_02_scope\obj\Debug\25_05_02_scope.csproj.CoreCompileInputs.cache
+C:\Users\ne_kazual\source\repos\25_05_02_scope\25_05_02_scope\bin\Debug\25_05_02_scope.exe.config
+C:\Users\ne_kazual\source\repos\25_05_02_scope\25_05_02_scope\bin\Debug\25_05_02_scope.exe
+C:\Users\ne_kazual\source\repos\25_05_02_scope\25_05_02_scope\bin\Debug\25_05_02_scope.pdb
+C:\Users\ne_kazual\source\repos\25_05_02_scope\25_05_02_scope\obj\Debug\25_05_02_scope.exe
+C:\Users\ne_kazual\source\repos\25_05_02_scope\25_05_02_scope\obj\Debug\25_05_02_scope.pdb
