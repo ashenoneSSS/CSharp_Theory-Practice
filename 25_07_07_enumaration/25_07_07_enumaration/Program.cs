@@ -47,8 +47,8 @@ namespace _25_07_07_enumaration
             // Basic enum usage
             Day today = Day.Monday;
             Console.WriteLine(today);           // prints "Monday"
-            Console.WriteLine((int)today);
-            Console.WriteLine();// prints 0
+            Console.WriteLine((int)today);      // prints 0
+            Console.WriteLine();                
 
             today = Day.Friday;
             Console.WriteLine(today);           // prints "Friday"

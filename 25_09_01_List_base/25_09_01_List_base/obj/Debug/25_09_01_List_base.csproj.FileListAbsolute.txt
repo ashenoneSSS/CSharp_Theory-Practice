@@ -1,0 +1,7 @@
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_09_01_List_base\25_09_01_List_base\bin\Debug\25_09_01_List_base.exe.config
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_09_01_List_base\25_09_01_List_base\bin\Debug\25_09_01_List_base.exe
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_09_01_List_base\25_09_01_List_base\bin\Debug\25_09_01_List_base.pdb
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_09_01_List_base\25_09_01_List_base\obj\Debug\25_09_01_List_base.csproj.AssemblyReference.cache
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_09_01_List_base\25_09_01_List_base\obj\Debug\25_09_01_List_base.csproj.CoreCompileInputs.cache
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_09_01_List_base\25_09_01_List_base\obj\Debug\25_09_01_List_base.exe
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_09_01_List_base\25_09_01_List_base\obj\Debug\25_09_01_List_base.pdb

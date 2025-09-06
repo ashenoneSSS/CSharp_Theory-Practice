@@ -1,0 +1,7 @@
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_09_04_Dictionary_base\25_09_04_Dictionary_base\bin\Debug\25_09_04_Dictionary_base.exe.config
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_09_04_Dictionary_base\25_09_04_Dictionary_base\bin\Debug\25_09_04_Dictionary_base.exe
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_09_04_Dictionary_base\25_09_04_Dictionary_base\bin\Debug\25_09_04_Dictionary_base.pdb
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_09_04_Dictionary_base\25_09_04_Dictionary_base\obj\Debug\25_09_04_Dictionary_base.csproj.AssemblyReference.cache
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_09_04_Dictionary_base\25_09_04_Dictionary_base\obj\Debug\25_09_04_Dictionary_base.csproj.CoreCompileInputs.cache
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_09_04_Dictionary_base\25_09_04_Dictionary_base\obj\Debug\25_09_04_Dictionary_base.exe
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_09_04_Dictionary_base\25_09_04_Dictionary_base\obj\Debug\25_09_04_Dictionary_base.pdb

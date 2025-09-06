@@ -1,0 +1,7 @@
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_08_30_static_base\25_08_30_static_base\bin\Debug\25_08_30_static_base.exe.config
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_08_30_static_base\25_08_30_static_base\bin\Debug\25_08_30_static_base.exe
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_08_30_static_base\25_08_30_static_base\bin\Debug\25_08_30_static_base.pdb
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_08_30_static_base\25_08_30_static_base\obj\Debug\25_08_30_static_base.csproj.AssemblyReference.cache
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_08_30_static_base\25_08_30_static_base\obj\Debug\25_08_30_static_base.csproj.CoreCompileInputs.cache
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_08_30_static_base\25_08_30_static_base\obj\Debug\25_08_30_static_base.exe
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_08_30_static_base\25_08_30_static_base\obj\Debug\25_08_30_static_base.pdb

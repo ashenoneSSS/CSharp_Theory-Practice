@@ -1,0 +1,7 @@
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_08_02_Methods\25_08_02_Methods\bin\Debug\25_08_02_Methods.exe.config
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_08_02_Methods\25_08_02_Methods\bin\Debug\25_08_02_Methods.exe
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_08_02_Methods\25_08_02_Methods\bin\Debug\25_08_02_Methods.pdb
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_08_02_Methods\25_08_02_Methods\obj\Debug\25_08_02_Methods.csproj.AssemblyReference.cache
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_08_02_Methods\25_08_02_Methods\obj\Debug\25_08_02_Methods.csproj.CoreCompileInputs.cache
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_08_02_Methods\25_08_02_Methods\obj\Debug\25_08_02_Methods.exe
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_08_02_Methods\25_08_02_Methods\obj\Debug\25_08_02_Methods.pdb
