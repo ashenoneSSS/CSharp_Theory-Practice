@@ -14,21 +14,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ne_kazual\\Desktop\\Cs_Theory-Practice\\try-draft444\\try-draft444\\Program.cs",
               "RelativeDocumentMoniker": "try-draft444\\Program.cs",
-              "ToolTip": "C:\\Users\\ne_kazual\\Desktop\\Cs_Theory-Practice\\try-draft444\\try-draft444\\Program.cs*",
-              "RelativeToolTip": "try-draft444\\Program.cs*",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCcAAAAXAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\ne_kazual\\Desktop\\Cs_Theory-Practice\\try-draft444\\try-draft444\\Program.cs",
+              "RelativeToolTip": "try-draft444\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-13T14:13:21.401Z",
               "EditorCaption": ""

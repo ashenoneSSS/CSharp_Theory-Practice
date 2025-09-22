@@ -1,7 +1,0 @@
-C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_08_03_string-casr-to-char-array\25_08_03_string-casr-to-char-array\bin\Debug\25_08_03_string-casr-to-char-array.exe.config
-C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_08_03_string-casr-to-char-array\25_08_03_string-casr-to-char-array\bin\Debug\25_08_03_string-casr-to-char-array.exe
-C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_08_03_string-casr-to-char-array\25_08_03_string-casr-to-char-array\bin\Debug\25_08_03_string-casr-to-char-array.pdb
-C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_08_03_string-casr-to-char-array\25_08_03_string-casr-to-char-array\obj\Debug\25_08_03_string-casr-to-char-array.csproj.AssemblyReference.cache
-C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_08_03_string-casr-to-char-array\25_08_03_string-casr-to-char-array\obj\Debug\25_08_03_string-casr-to-char-array.csproj.CoreCompileInputs.cache
-C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_08_03_string-casr-to-char-array\25_08_03_string-casr-to-char-array\obj\Debug\25_08_03_string-casr-to-char-array.exe
-C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_08_03_string-casr-to-char-array\25_08_03_string-casr-to-char-array\obj\Debug\25_08_03_string-casr-to-char-array.pdb

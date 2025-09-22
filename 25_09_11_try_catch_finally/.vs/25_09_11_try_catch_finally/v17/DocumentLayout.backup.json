@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ne_kazual\\Desktop\\Cs_Theory-Practice\\25_09_11_try_catch_finally\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{67D92041-093E-4CC0-8FBE-CD29614C636D}|25_09_11_try_catch_finally\\25_09_11_try_catch_finally.csproj|c:\\users\\ne_kazual\\desktop\\cs_theory-practice\\25_09_11_try_catch_finally\\25_09_11_try_catch_finally\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67D92041-093E-4CC0-8FBE-CD29614C636D}|25_09_11_try_catch_finally\\25_09_11_try_catch_finally.csproj|solutionrelative:25_09_11_try_catch_finally\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ne_kazual\\Desktop\\Cs_Theory-Practice\\25_09_11_try_catch_finally\\25_09_11_try_catch_finally\\Program.cs",
+              "RelativeDocumentMoniker": "25_09_11_try_catch_finally\\Program.cs",
+              "ToolTip": "C:\\Users\\ne_kazual\\Desktop\\Cs_Theory-Practice\\25_09_11_try_catch_finally\\25_09_11_try_catch_finally\\Program.cs",
+              "RelativeToolTip": "25_09_11_try_catch_finally\\Program.cs",
+              "ViewState": "AgIAAHMAAAAAAAAAAADwv48AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T06:38:57.998Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

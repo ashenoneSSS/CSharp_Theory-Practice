@@ -1,0 +1,7 @@
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_09_10_file-reading_file-writing\25_09_10_file-reading_file-writing\bin\Debug\25_09_10_file-reading_file-writing.exe.config
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_09_10_file-reading_file-writing\25_09_10_file-reading_file-writing\bin\Debug\25_09_10_file-reading_file-writing.exe
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_09_10_file-reading_file-writing\25_09_10_file-reading_file-writing\bin\Debug\25_09_10_file-reading_file-writing.pdb
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_09_10_file-reading_file-writing\25_09_10_file-reading_file-writing\obj\Debug\25_09_10_file-reading_file-writing.csproj.AssemblyReference.cache
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_09_10_file-reading_file-writing\25_09_10_file-reading_file-writing\obj\Debug\25_09_10_file-reading_file-writing.csproj.CoreCompileInputs.cache
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_09_10_file-reading_file-writing\25_09_10_file-reading_file-writing\obj\Debug\25_09_10_file-reading_file-writing.exe
+C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_09_10_file-reading_file-writing\25_09_10_file-reading_file-writing\obj\Debug\25_09_10_file-reading_file-writing.pdb

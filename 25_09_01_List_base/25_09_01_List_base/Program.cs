@@ -59,13 +59,13 @@ namespace _25_09_01_List_base
             // Example 2 (RemoveAt)
             Console.WriteLine("Example 2:");
 
-            List<float> temperature = new List<float> { 1.734f, 34.238f, -14.925f, 21.465f};
+            List<float> temperature = new List<float> { 1.734f, 34.238f, -14.925f, 21.465f };
             Show_list(temperature);
 
 
             temperature.RemoveAt(2);                        // index of element in List
 
-            for(int i = 0; i < temperature.Count(); i++)
+            for (int i = 0; i < temperature.Count(); i++)
             {
                 Console.Write($"{temperature[i],-10}");
             }
@@ -103,7 +103,54 @@ namespace _25_09_01_List_base
 
 
 
+            // Example 4 (Removing duplicates algorithm)
+            Console.WriteLine("Example 4:");
+
+            List<int> someList = new List<int>();
+
+            Console.Write("\nEnter the size of list: ");
+            int size = int.Parse(Console.ReadLine());
+
+            RandIntList(someList, size);
+            ShowIntList(someList);
+
+
+
+            for (int i = 0; i < someList.Count; i++)
+            {
+                for (int j = someList.Count - 1; j > i; j--)
+                {
+                    if (someList[i] == someList[j])
+                        someList.RemoveAt(j);
+                }
+            }
+
+
+
+
+            Console.WriteLine("\n");
+            ShowIntList(someList);
+
+
+
             Console.ReadLine();
+        }
+
+
+        static void RandIntList(List<int> list, int count)
+        {
+            Random rnd = new Random();
+            for (int i = 0; i < count; i++)
+            {
+                list.Add(rnd.Next(0, 10));
+            }
+        }
+
+
+        static void ShowIntList(List<int> list)
+        {
+            foreach (int a in list)
+                Console.Write($"{a,-4}");
         }
     }
 }
