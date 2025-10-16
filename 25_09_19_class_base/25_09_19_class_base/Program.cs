@@ -43,9 +43,18 @@ namespace _25_09_13_Class_Basics
     {
         static void Main(string[] args)
         {
+            /*
+            Normally when you are creating an object of a class, 
+            you create a variable to hold the reference of that 
+            object(instance of the class)
+
+            And the type of the variable is usually the class of that object.
+            */   
+            
             // ===========================
             // 1) Syntax of creating class instance
             // ===========================
+
             Person p1 = new Person("Alice");
             p1.Print(); // Age=0, Alive=false (default values)
 
