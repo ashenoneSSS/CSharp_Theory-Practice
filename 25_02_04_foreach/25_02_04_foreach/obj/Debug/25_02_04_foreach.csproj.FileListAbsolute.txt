@@ -1,7 +1,0 @@
-C:\Users\ne_kazual\source\repos\25_02_04_foreach\25_02_04_foreach\bin\Debug\25_02_04_foreach.exe.config
-C:\Users\ne_kazual\source\repos\25_02_04_foreach\25_02_04_foreach\bin\Debug\25_02_04_foreach.exe
-C:\Users\ne_kazual\source\repos\25_02_04_foreach\25_02_04_foreach\bin\Debug\25_02_04_foreach.pdb
-C:\Users\ne_kazual\source\repos\25_02_04_foreach\25_02_04_foreach\obj\Debug\25_02_04_foreach.csproj.AssemblyReference.cache
-C:\Users\ne_kazual\source\repos\25_02_04_foreach\25_02_04_foreach\obj\Debug\25_02_04_foreach.csproj.CoreCompileInputs.cache
-C:\Users\ne_kazual\source\repos\25_02_04_foreach\25_02_04_foreach\obj\Debug\25_02_04_foreach.exe
-C:\Users\ne_kazual\source\repos\25_02_04_foreach\25_02_04_foreach\obj\Debug\25_02_04_foreach.pdb

@@ -1,7 +1,0 @@
-C:\Users\Admin\Desktop\Cs_projects\24_12_31_const-variables\24_12_31_const-variables\bin\Debug\24_12_31_const-variables.exe.config
-C:\Users\Admin\Desktop\Cs_projects\24_12_31_const-variables\24_12_31_const-variables\bin\Debug\24_12_31_const-variables.exe
-C:\Users\Admin\Desktop\Cs_projects\24_12_31_const-variables\24_12_31_const-variables\bin\Debug\24_12_31_const-variables.pdb
-C:\Users\Admin\Desktop\Cs_projects\24_12_31_const-variables\24_12_31_const-variables\obj\Debug\24_12_31_const-variables.csproj.AssemblyReference.cache
-C:\Users\Admin\Desktop\Cs_projects\24_12_31_const-variables\24_12_31_const-variables\obj\Debug\24_12_31_const-variables.csproj.CoreCompileInputs.cache
-C:\Users\Admin\Desktop\Cs_projects\24_12_31_const-variables\24_12_31_const-variables\obj\Debug\24_12_31_const-variables.exe
-C:\Users\Admin\Desktop\Cs_projects\24_12_31_const-variables\24_12_31_const-variables\obj\Debug\24_12_31_const-variables.pdb

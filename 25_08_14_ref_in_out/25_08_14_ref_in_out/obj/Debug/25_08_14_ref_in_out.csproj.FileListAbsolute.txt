@@ -1,7 +1,0 @@
-C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_08_14_ref_in_out\25_08_14_ref_in_out\bin\Debug\25_08_14_ref_in_out.exe.config
-C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_08_14_ref_in_out\25_08_14_ref_in_out\bin\Debug\25_08_14_ref_in_out.exe
-C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_08_14_ref_in_out\25_08_14_ref_in_out\bin\Debug\25_08_14_ref_in_out.pdb
-C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_08_14_ref_in_out\25_08_14_ref_in_out\obj\Debug\25_08_14_ref_in_out.csproj.AssemblyReference.cache
-C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_08_14_ref_in_out\25_08_14_ref_in_out\obj\Debug\25_08_14_ref_in_out.csproj.CoreCompileInputs.cache
-C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_08_14_ref_in_out\25_08_14_ref_in_out\obj\Debug\25_08_14_ref_in_out.exe
-C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_08_14_ref_in_out\25_08_14_ref_in_out\obj\Debug\25_08_14_ref_in_out.pdb

@@ -1,8 +1,0 @@
-C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_09_11_try_catch_finally\25_09_11_try_catch_finally\bin\Debug\25_09_11_try_catch_finally.exe.config
-C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_09_11_try_catch_finally\25_09_11_try_catch_finally\bin\Debug\25_09_11_try_catch_finally.exe
-C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_09_11_try_catch_finally\25_09_11_try_catch_finally\bin\Debug\25_09_11_try_catch_finally.pdb
-C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_09_11_try_catch_finally\25_09_11_try_catch_finally\obj\Debug\25_09_11_try_catch_finally.csproj.AssemblyReference.cache
-C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_09_11_try_catch_finally\25_09_11_try_catch_finally\obj\Debug\25_09_11_try_catch_finally.csproj.CoreCompileInputs.cache
-C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_09_11_try_catch_finally\25_09_11_try_catch_finally\obj\Debug\25_09_11_try_catch_finally.exe
-C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_09_11_try_catch_finally\25_09_11_try_catch_finally\obj\Debug\25_09_11_try_catch_finally.pdb
-C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_09_11_try_catch_finally\25_09_11_try_catch_finally\obj\Debug\25_09_11_try_catch_finally.exe.config

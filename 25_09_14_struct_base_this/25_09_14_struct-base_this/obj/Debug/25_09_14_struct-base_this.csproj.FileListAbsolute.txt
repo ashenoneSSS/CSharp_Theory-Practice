@@ -1,7 +1,0 @@
-C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_09_14_struct-base_this\25_09_14_struct-base_this\bin\Debug\25_09_14_struct-base_this.exe.config
-C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_09_14_struct-base_this\25_09_14_struct-base_this\bin\Debug\25_09_14_struct-base_this.exe
-C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_09_14_struct-base_this\25_09_14_struct-base_this\bin\Debug\25_09_14_struct-base_this.pdb
-C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_09_14_struct-base_this\25_09_14_struct-base_this\obj\Debug\25_09_14_struct-base_this.csproj.AssemblyReference.cache
-C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_09_14_struct-base_this\25_09_14_struct-base_this\obj\Debug\25_09_14_struct-base_this.csproj.CoreCompileInputs.cache
-C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_09_14_struct-base_this\25_09_14_struct-base_this\obj\Debug\25_09_14_struct-base_this.exe
-C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_09_14_struct-base_this\25_09_14_struct-base_this\obj\Debug\25_09_14_struct-base_this.pdb

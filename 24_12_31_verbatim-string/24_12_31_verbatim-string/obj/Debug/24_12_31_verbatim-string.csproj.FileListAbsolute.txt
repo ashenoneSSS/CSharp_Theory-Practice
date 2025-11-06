@@ -1,7 +1,0 @@
-C:\Users\Admin\Desktop\Cs_projects\24_12_31_verbatim-string\24_12_31_verbatim-string\bin\Debug\24_12_31_verbatim-string.exe.config
-C:\Users\Admin\Desktop\Cs_projects\24_12_31_verbatim-string\24_12_31_verbatim-string\bin\Debug\24_12_31_verbatim-string.exe
-C:\Users\Admin\Desktop\Cs_projects\24_12_31_verbatim-string\24_12_31_verbatim-string\bin\Debug\24_12_31_verbatim-string.pdb
-C:\Users\Admin\Desktop\Cs_projects\24_12_31_verbatim-string\24_12_31_verbatim-string\obj\Debug\24_12_31_verbatim-string.csproj.AssemblyReference.cache
-C:\Users\Admin\Desktop\Cs_projects\24_12_31_verbatim-string\24_12_31_verbatim-string\obj\Debug\24_12_31_verbatim-string.csproj.CoreCompileInputs.cache
-C:\Users\Admin\Desktop\Cs_projects\24_12_31_verbatim-string\24_12_31_verbatim-string\obj\Debug\24_12_31_verbatim-string.exe
-C:\Users\Admin\Desktop\Cs_projects\24_12_31_verbatim-string\24_12_31_verbatim-string\obj\Debug\24_12_31_verbatim-string.pdb

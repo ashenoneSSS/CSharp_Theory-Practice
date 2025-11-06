@@ -1,7 +1,0 @@
-C:\Users\Admin\Desktop\Cs_projects\24_12_30_data-types_literals\24_12_30_data-types_literals\bin\Debug\24_12_30_data-types_literals.exe.config
-C:\Users\Admin\Desktop\Cs_projects\24_12_30_data-types_literals\24_12_30_data-types_literals\bin\Debug\24_12_30_data-types_literals.exe
-C:\Users\Admin\Desktop\Cs_projects\24_12_30_data-types_literals\24_12_30_data-types_literals\bin\Debug\24_12_30_data-types_literals.pdb
-C:\Users\Admin\Desktop\Cs_projects\24_12_30_data-types_literals\24_12_30_data-types_literals\obj\Debug\24_12_30_data-types_literals.csproj.AssemblyReference.cache
-C:\Users\Admin\Desktop\Cs_projects\24_12_30_data-types_literals\24_12_30_data-types_literals\obj\Debug\24_12_30_data-types_literals.csproj.CoreCompileInputs.cache
-C:\Users\Admin\Desktop\Cs_projects\24_12_30_data-types_literals\24_12_30_data-types_literals\obj\Debug\24_12_30_data-types_literals.exe
-C:\Users\Admin\Desktop\Cs_projects\24_12_30_data-types_literals\24_12_30_data-types_literals\obj\Debug\24_12_30_data-types_literals.pdb

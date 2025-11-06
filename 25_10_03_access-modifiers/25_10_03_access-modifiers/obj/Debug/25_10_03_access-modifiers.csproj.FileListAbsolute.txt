@@ -1,8 +1,0 @@
-C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_10_03_access-modifiers\25_10_03_access-modifiers\bin\Debug\25_10_03_access-modifiers.exe.config
-C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_10_03_access-modifiers\25_10_03_access-modifiers\bin\Debug\25_10_03_access-modifiers.exe
-C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_10_03_access-modifiers\25_10_03_access-modifiers\bin\Debug\25_10_03_access-modifiers.pdb
-C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_10_03_access-modifiers\25_10_03_access-modifiers\obj\Debug\25_10_03_access-modifiers.csproj.AssemblyReference.cache
-C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_10_03_access-modifiers\25_10_03_access-modifiers\obj\Debug\25_10_03_access-modifiers.csproj.CoreCompileInputs.cache
-C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_10_03_access-modifiers\25_10_03_access-modifiers\obj\Debug\25_10_03_access-modifiers.exe
-C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_10_03_access-modifiers\25_10_03_access-modifiers\obj\Debug\25_10_03_access-modifiers.pdb
-C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_10_03_access-modifiers\25_10_03_access-modifiers\obj\Debug\25_10_03_access-modifiers.exe.config

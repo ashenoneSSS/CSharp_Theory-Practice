@@ -1,7 +1,0 @@
-C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_02_04_for-features\25_02_04_for-features\obj\Debug\25_02_04_for-features.csproj.AssemblyReference.cache
-C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_02_04_for-features\25_02_04_for-features\obj\Debug\25_02_04_for-features.csproj.CoreCompileInputs.cache
-C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_02_04_for-features\25_02_04_for-features\bin\Debug\25_02_04_for-features.exe.config
-C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_02_04_for-features\25_02_04_for-features\bin\Debug\25_02_04_for-features.exe
-C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_02_04_for-features\25_02_04_for-features\bin\Debug\25_02_04_for-features.pdb
-C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_02_04_for-features\25_02_04_for-features\obj\Debug\25_02_04_for-features.exe
-C:\Users\ne_kazual\Desktop\Cs_Theory-Practice\25_02_04_for-features\25_02_04_for-features\obj\Debug\25_02_04_for-features.pdb

@@ -1,7 +1,0 @@
-C:\Users\Admin\Desktop\Cs_projects\25_01_08_data-type-casting\25_01_08_data-type-casting\bin\Debug\25_01_08_data-type-casting.exe.config
-C:\Users\Admin\Desktop\Cs_projects\25_01_08_data-type-casting\25_01_08_data-type-casting\bin\Debug\25_01_08_data-type-casting.exe
-C:\Users\Admin\Desktop\Cs_projects\25_01_08_data-type-casting\25_01_08_data-type-casting\bin\Debug\25_01_08_data-type-casting.pdb
-C:\Users\Admin\Desktop\Cs_projects\25_01_08_data-type-casting\25_01_08_data-type-casting\obj\Debug\25_01_08_data-type-casting.csproj.AssemblyReference.cache
-C:\Users\Admin\Desktop\Cs_projects\25_01_08_data-type-casting\25_01_08_data-type-casting\obj\Debug\25_01_08_data-type-casting.csproj.CoreCompileInputs.cache
-C:\Users\Admin\Desktop\Cs_projects\25_01_08_data-type-casting\25_01_08_data-type-casting\obj\Debug\25_01_08_data-type-casting.exe
-C:\Users\Admin\Desktop\Cs_projects\25_01_08_data-type-casting\25_01_08_data-type-casting\obj\Debug\25_01_08_data-type-casting.pdb
