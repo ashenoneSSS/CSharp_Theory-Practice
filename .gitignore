@@ -1,0 +1,13 @@
+# Visual Studio
+.vs/
+
+# Build artifacts
+bin/
+obj/
+
+# Solutions / configs (если реально хочешь их игнорить)
+*.sln
+*.config
+
+# (опционально) если хочешь спрятать Properties
+Properties/
