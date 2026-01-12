@@ -1,31 +1,24 @@
 ﻿using System;
-using System.Linq;
-using System.IO;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Threading;
 
 class Program
 {
-    static public void function(int a, int b)
+    static void Main()
     {
-        int c = a + b;
-        string f = c.ToString();
+        Console.WriteLine("Before try");
 
-        Console.WriteLine(f);
-    }
-
-    static void Main(string[] args)
-    {
-        Action<int, int> RefToFunc = (int a, int b) =>
+        try
         {
-            int c = a + b;
-            string f = c.ToString();
+            Console.WriteLine("Inside try, before throw");
+            throw new Exception("Boom! This is my exception.");
+            Console.WriteLine("Inside try, after throw");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Caught exception:");
+            Console.WriteLine(ex.GetType().Name);
+            Console.WriteLine(ex.Message);
+        }
 
-            Console.WriteLine(f);
-        };
-
-        RefToFunc(4, 6);
-        
+        Console.WriteLine("After try/catch");
     }
 }

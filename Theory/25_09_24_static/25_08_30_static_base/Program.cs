@@ -7,24 +7,45 @@ namespace _25_08_30_static_base
         // =============================
         // Instance field (non-static)
         // =============================
-        // Belongs to each object separately.
-        // Each instance has its own copy.
+        // Belongs to each object separately
+        // Each instance has its own copy
         public int instanceCounter = 0;
-
 
         // =============================
         // Static field
         // =============================
-        // Belongs to the class itself, not to any object.
-        // Shared by all instances.
+        // Belongs to the class itself, not to any object
+        // Shared by all instances
         public static int totalObjects = 0;
 
+        // =============================
+        // Another static field to show static constructor work
+        // =============================
+        // Initialized once for the whole class
+        public static DateTime classLoadedAt;
+
+        // =============================
+        // Static constructor
+        // =============================
+        // - Runs automatically ONCE per type (per program run)
+        // - Runs BEFORE the first use of the class:
+        //   * before first object is created (new Program())
+        //   * or before first static member is used (Program.totalObjects / Program.ShowTotal)
+        // - Cannot have parameters
+        // - Cannot be called manually
+        // - Use it to initialize static fields
+        static Program()
+        {
+            classLoadedAt = DateTime.Now;
+            Console.WriteLine("Static constructor: Program class initialized");
+            Console.WriteLine("Static constructor: classLoadedAt = " + classLoadedAt.ToString("HH:mm:ss"));
+        }
 
         // =============================
         // Instance method (non-static)
         // =============================
         // Belongs to an object (instance of the class)
-        // You must create an object before calling it.
+        // You must create an object before calling it
         bool IsPrimeInstance(int n)
         {
             if (n < 2) return false;
@@ -33,12 +54,11 @@ namespace _25_08_30_static_base
             return true;
         }
 
-
         // =============================
         // Static method
         // =============================
-        // Belongs to the class itself, not to any object.
-        // You call it using ClassName.MethodName without creating an object.
+        // Belongs to the class itself, not to any object
+        // You call it using ClassName.MethodName without creating an object
         static bool IsPrimeStatic(int n)
         {
             if (n < 2) return false;
@@ -47,19 +67,17 @@ namespace _25_08_30_static_base
             return true;
         }
 
-
         // =============================
-        // Constructor
+        // Instance constructor
         // =============================
         // Every time an object is created,
         // the instance counter increases for that object,
-        // and the static totalObjects increases for all.
+        // and the static totalObjects increases for all
         public Program()
         {
             instanceCounter++;
             totalObjects++;
         }
-
 
         // =============================
         // Instance method using both fields
@@ -69,20 +87,24 @@ namespace _25_08_30_static_base
             Console.WriteLine($"Instance Counter: {instanceCounter}, Total Objects: {totalObjects}");
         }
 
-
         // =============================
         // Static method accessing static field
         // =============================
         public static void ShowTotal()
         {
             Console.WriteLine($"Total created objects (static): {totalObjects}");
+            Console.WriteLine("Class loaded at: " + classLoadedAt.ToString("HH:mm:ss"));
         }
-
 
         static void Main(string[] args)
         {
+            // - The static constructor will run before the first usage of Program
+            // - Depending on what happens first, it runs before:
+            //   * creating the first object
+            //   * or accessing a static member
+
             // --- Using instance method ---
-            Program obj = new Program(); // create object
+            Program obj = new Program(); // first object creation triggers static constructor (if not run yet)
             for (int i = 2; i < 10; i++)
             {
                 if (obj.IsPrimeInstance(i))
@@ -90,7 +112,6 @@ namespace _25_08_30_static_base
             }
 
             Console.WriteLine();
-
 
             // --- Using static method ---
             for (int i = 2; i < 10; i++)
@@ -101,13 +122,12 @@ namespace _25_08_30_static_base
 
             Console.WriteLine();
 
-
             // --- Example: static and instance fields ---
             Program p1 = new Program();
             Program p2 = new Program();
             Program p3 = new Program();
 
-            p1.ShowCounters(); // instanceCounter = 1, totalObjects = 4 (all objects share one static field)
+            p1.ShowCounters(); // instanceCounter = 1, totalObjects = 4
             p2.ShowCounters(); // instanceCounter = 1, totalObjects = 4
             p3.ShowCounters(); // instanceCounter = 1, totalObjects = 4
 
@@ -144,11 +164,16 @@ Summary:
   * all objects see the same value
   * can be accessed using ClassName.FieldName
 
-Similarly, in other methods as well, when you are accessing fields, you are basically accessing 
-the fields of the objects which call those methods, and not of the class itself, 
+- Static constructor
+  * runs once automatically before the first use of the class
+  * used to initialize static fields
+  * cannot have parameters and cannot be called manually
+
+Similarly, in other methods as well, when you are accessing fields, you are basically accessing
+the fields of the objects which call those methods, and not of the class itself,
 because a class normally does not contain any data.
 
-However, there is a way to store data into a class directly and make a property accessible 
+However, there is a way to store data into a class directly and make a property accessible
 without needing to create an object. You can do that by simply making that field or method static.
 */
 
