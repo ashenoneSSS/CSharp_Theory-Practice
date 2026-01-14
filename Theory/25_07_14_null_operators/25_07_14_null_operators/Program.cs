@@ -18,49 +18,50 @@ namespace _25_09_20_Null_Operators
     //
     // - ?.  (null-conditional operator)
     //   safely accesses a member only if the left side is not null
-    //   if left side is null, the whole expression becomes null (no exception)
+    //   if left side is null, the whole expression becomes null 
     //
-    // - ??= (null-coalescing assignment)
+    // - ??= (null-coalescing assignment)                            --> ONLY IN C# 8.0
     //   assigns the right value only if the left variable is null
+    //   otherwise nothing happend - left variable have same value
 
     // ===========================
     // User-defined classes
     // ===========================
     class Address
     {
-        public string City { get; set; }
+        public string city { get; set; }
 
         public Address(string city)
         {
-            City = city;
+            this.city = city;
         }
 
         public void Print()
         {
-            Console.WriteLine("Address.City = " + City);
+            Console.WriteLine("Address.City = " + city);
         }
     }
 
     class Person
     {
-        public string Name { get; set; }
-        public Address Address { get; set; }
+        public string name { get; set; }
+        public Address address { get; set; }
 
         // - This list starts as null to demonstrate ??=
-        public List<string> Notes { get; private set; }
+        public List<string> notes { get; private set; }
 
         public Person(string name, Address address)
         {
-            Name = name;
-            Address = address;
-            Notes = null;
+            this.name = name;
+            this.address = address;
+            notes = null;
         }
 
         public void AddNote(string note)
         {
             // - Create the list only when it's first needed
-            Notes ??= new List<string>();
-            Notes.Add(note);
+            notes ??= new List<string>();
+            notes.Add(note);
         }
     }
 
@@ -72,7 +73,7 @@ namespace _25_09_20_Null_Operators
             // - If person is null -> person?.Address becomes null -> City becomes null -> return "No city"
             // - If Address is null -> Address?.City is null -> return "No city"
             // - If City is not null -> returns City
-            return person?.Address?.City ?? "No city";
+            return person?.address?.city ?? "No city";
         }
 
         static void Main(string[] args)
@@ -126,8 +127,8 @@ namespace _25_09_20_Null_Operators
 
             // - Calling method safely
             // - If Address is null, Address?.Print() does nothing
-            p2.Address?.Print();
-            p3.Address?.Print();
+            p2.address?.Print();
+            p3.address?.Print();
             Console.WriteLine();
 
             // ===========================
@@ -141,13 +142,13 @@ namespace _25_09_20_Null_Operators
             // - Lazy initialization of an object
             Address shippingAddress = null;
             shippingAddress ??= new Address("Lviv");
-            Console.WriteLine("shippingAddress.City = " + shippingAddress.City);
+            Console.WriteLine("shippingAddress.City = " + shippingAddress.city);
             Console.WriteLine();
 
             // - Lazy initialization inside a class method (Notes ??= new List<string>())
             p3.AddNote("First note");
             p3.AddNote("Second note");
-            Console.WriteLine("Notes count = " + (p3.Notes?.Count ?? 0));
+            Console.WriteLine("Notes count = " + (p3.notes?.Count ?? 0));
             Console.WriteLine();
 
             // ===========================
