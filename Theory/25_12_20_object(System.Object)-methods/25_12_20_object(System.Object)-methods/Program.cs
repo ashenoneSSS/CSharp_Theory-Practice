@@ -8,20 +8,41 @@ namespace _25_09_21_Object_Basics
     // ===========================
     // - object is the C# keyword alias for System.Object
     // - Object is the .NET class name, object is the C# keyword, they are the same type
-    // - Every type in C# ultimately derives from System.Object
+    // - Every type in C# ultimately implicitly derives from System.Object
     //   - class types derive from Object automatically
     //   - struct types derive from ValueType, and ValueType derives from Object
     //
-    // The 4 core Object methods
-    // - ToString() virtual, can be overridden for readable output
-    // - Equals(object) virtual, can be overridden for value equality
-    // - GetHashCode() virtual, must match Equals if you override Equals
-    // - GetType() non-virtual, always returns runtime type information
+    // The 4 core System.Object methods:
+    //
+    // 1) ToString()
+    //    - Returns: string
+    //    - Purpose: human-readable text representation of the object
+    //    - Common use: logging/debugging/output (Console.WriteLine(obj) calls ToString())
+    //    - Default: often the type name unless a type overrides it
+    //
+    // 2) GetType()
+    //    - Returns: Type
+    //    - Purpose: returns the real runtime type information of the object
+    //    - Common use: diagnostics/debugging/reflection, especially when a variable is typed as object/base type
+    //
+    // 3) Equals(object other)
+    //    - Returns: bool
+    //    - Purpose: checks whether two objects are considered equal
+    //    - Common use: value/content comparison (e.g., string compares characters)
+    //    - Default: for many reference types, compares references unless overridden
+    //
+    // 4) GetHashCode()
+    //    - Returns: int
+    //    - Purpose: hash number used by hash-based collections (Dictionary/HashSet) for fast lookup
+    //    - Rule: if a.Equals(b) is true, then a.GetHashCode() must equal b.GetHashCode()
     //
     // Extra method
-    // - ReferenceEquals(a, b) static, checks if two references point to the same object
-    // - ReferenceEquals is NOT affected by overriding Equals
-    // - For value types, ReferenceEquals usually returns false because of boxing
+    // 5) ReferenceEquals(a, b)
+    //    - Static method on System.Object
+    //    - Returns: bool
+    //    - Purpose: checks reference identity (do both variables point to the exact same object in memory?)
+    //    - Not affected by overriding Equals (it ignores "value equality" logic)
+    //    - For value types, it usually returns false because values get boxed into separate objects
 
     // ===========================
     // User-defined classes and helpers

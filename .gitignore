@@ -9,6 +9,7 @@ obj/
 *.sln
 *.config
 *.csproj
+*.slnx
 
 
 # (опционально) если хочешь спрятать Properties
