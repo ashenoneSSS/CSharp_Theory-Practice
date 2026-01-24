@@ -167,11 +167,24 @@ namespace _25_09_22_Boxing_Unboxing
 
             object boxed = 555;
 
-            // - No exception: checks type first, then unboxes into i
-            if (boxed is int i)
+            // boxed is an object reference
+            // because 555 is a value type (int), assigning it to object causes BOXING
+            // - a new boxed object is created on the heap that contains a copy of 555
+
+            if (boxed is int i) // checks whether the runtime value inside 'boxed' is an int and UNBOXES (extracts) the int value and assigns it to 'i' (value type, NOT boxed)
             {
+                //'i' gets a COPY of the value from the boxed object
                 Console.WriteLine("Unboxed int i = " + i);
+
+                // Changing 'i' does NOT affect 'boxed'
+                // because 'i' is a separate int variable holding its own copied value
+                i = 999;
+
+                // 'boxed' still points to the original boxed object that contains 555
+                // so printing boxed still shows 555
+                Console.WriteLine("boxed after i=999: " + boxed);
             }
+
 
             object boxed2 = "text";
             if (boxed2 is int j)
@@ -187,7 +200,7 @@ namespace _25_09_22_Boxing_Unboxing
         }
 
         // ===========================
-        // Example 5: boxing with interfaces (struct implements interface)
+        // Example 5: boxing with struct + interfaces
         // ===========================
         public static void BoxingToInterface()
         {
@@ -284,80 +297,7 @@ namespace _25_09_22_Boxing_Unboxing
             Console.WriteLine("No boxing here because List<int> stores int values, not object");
             Console.WriteLine();
         }
-
-        // ===========================
-        // Example 9: ValueType reference (still boxing)
-        // ===========================
-        public static void ValueTypeBase_Boxing()
-        {
-            PrintTitle("System.ValueType reference (boxing)");
-
-            PointStruct ps = new PointStruct(7, 8);
-
-            // - ValueType is a reference type, so assigning a struct to ValueType causes boxing
-            ValueType vt = ps;
-
-            Console.WriteLine("ps = " + ps);
-            Console.WriteLine("vt.ToString() = " + vt.ToString());
-            Console.WriteLine("vt runtime type = " + vt.GetType().Name);
-
-            // - Unboxing back to PointStruct
-            PointStruct unboxed = (PointStruct)vt;
-            Console.WriteLine("unboxed = " + unboxed);
-
-            Console.WriteLine();
-        }
-
-        // ===========================
-        // Example 10: boxing in params object[]
-        // ===========================
-        static void PrintMany(params object[] items)
-        {
-            // - params object[] means all value type arguments are boxed
-            for (int i = 0; i < items.Length; i++)
-                Console.WriteLine($"Item {i}: {items[i]} ({items[i].GetType().Name})");
-        }
-
-        public static void ParamsBoxing()
-        {
-            PrintTitle("Boxing in params object[]");
-
-            int a = 10;
-            double b = 2.5;
-            PointStruct ps = new PointStruct(1, 2);
-
-            // - a is boxed, b is boxed, ps is boxed
-            PrintMany(a, b, ps, "text");
-
-            Console.WriteLine();
-        }
-
-        // ===========================
-        // Example 11: method overload that avoids boxing
-        // ===========================
-        static void PrintInt(int x)
-        {
-            // - No boxing because parameter type is int
-            Console.WriteLine("PrintInt: " + x);
-        }
-
-        static void PrintObject(object x)
-        {
-            // - If you pass an int here, it will box
-            Console.WriteLine("PrintObject: " + x + " (" + x.GetType().Name + ")");
-        }
-
-        public static void OverloadBoxingDifference()
-        {
-            PrintTitle("Overloads: int vs object (boxing difference)");
-
-            int x = 42;
-
-            PrintInt(x);       // no boxing
-            PrintObject(x);    // boxing
-
-            Console.WriteLine();
-        }
+        
     }
 
     internal class Program
@@ -374,11 +314,6 @@ namespace _25_09_22_Boxing_Unboxing
 
             Demo.NonGenericCollections_Boxing();
             Demo.Generics_AvoidBoxing();
-
-            Demo.ValueTypeBase_Boxing();
-
-            Demo.ParamsBoxing();
-            Demo.OverloadBoxingDifference();
 
             Console.ReadLine();
         }

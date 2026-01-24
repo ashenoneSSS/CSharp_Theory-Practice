@@ -37,7 +37,7 @@ namespace _25_09_21_Object_Basics
     //    - Rule: if a.Equals(b) is true, then a.GetHashCode() must equal b.GetHashCode()
     //
     // Extra method
-    // 5) ReferenceEquals(a, b)
+    // 5) ReferenceEquals(object a, object b)
     //    - Static method on System.Object
     //    - Returns: bool
     //    - Purpose: checks reference identity (do both variables point to the exact same object in memory?)
@@ -47,12 +47,12 @@ namespace _25_09_21_Object_Basics
     // ===========================
     // User-defined classes and helpers
     // ===========================
-    class PersonRef
+    class PersonDefault
     {
         public string Name;
         public int Age;
 
-        public PersonRef(string name, int age)
+        public PersonDefault(string name, int age)
         {
             Name = name;
             Age = age;
@@ -164,8 +164,8 @@ namespace _25_09_21_Object_Basics
             int x = 123;
             Console.WriteLine("int.ToString -> " + x.ToString());
 
-            PersonRef p1 = new PersonRef("Denys", 19);
-            Console.WriteLine("PersonRef.ToString default -> " + p1.ToString());
+            PersonDefault p1 = new PersonDefault("Denys", 19);
+            Console.WriteLine("PersonDefault.ToString default -> " + p1.ToString());
 
             PersonValue p2 = new PersonValue("Denys", 19);
             Console.WriteLine("PersonValue.ToString override -> " + p2.ToString());
@@ -211,19 +211,19 @@ namespace _25_09_21_Object_Basics
             string s2 = "hi";
             Console.WriteLine("string Equals -> " + s1.Equals(s2));
 
-            // - For PersonRef (no override), Equals checks reference by default
-            PersonRef r1 = new PersonRef("Denys", 19);
-            PersonRef r2 = new PersonRef("Denys", 19);
-            PersonRef r3 = r1;
+            // - For PersonDefault (no override), Equals checks reference by default
+            PersonDefault r1 = new PersonDefault("Denys", 19);
+            PersonDefault r2 = new PersonDefault("Denys", 19);
+            PersonDefault r3 = r1;
 
-            Console.WriteLine("PersonRef r1.Equals(r2) -> " + r1.Equals(r2));
-            Console.WriteLine("PersonRef r1.Equals(r3) -> " + r1.Equals(r3));
+            Console.WriteLine("PersonDefault r1.Equals(r2) -> " + r1.Equals(r2));
+            Console.WriteLine("PersonDefault r1.Equals(r3) -> " + r1.Equals(r3));
 
             // - For PersonValue (override), Equals checks values
             PersonValue v1 = new PersonValue("Denys", 19);
             PersonValue v2 = new PersonValue("Denys", 19);
             PersonValue v3 = new PersonValue("Denys", 20);
-
+             
             Console.WriteLine("PersonValue v1.Equals(v2) -> " + v1.Equals(v2));
             Console.WriteLine("PersonValue v1.Equals(v3) -> " + v1.Equals(v3));
 
@@ -279,9 +279,9 @@ namespace _25_09_21_Object_Basics
             PrintTitle("ReferenceEquals examples");
 
             // - ReferenceEquals checks identity (same object)
-            PersonRef r1 = new PersonRef("Denys", 19);
-            PersonRef r2 = new PersonRef("Denys", 19);
-            PersonRef r3 = r1;
+            PersonDefault r1 = new PersonDefault("Denys", 19);
+            PersonDefault r2 = new PersonDefault("Denys", 19);
+            PersonDefault r3 = r1;
 
             Console.WriteLine("ReferenceEquals(r1, r2) -> " + object.ReferenceEquals(r1, r2));
             Console.WriteLine("ReferenceEquals(r1, r3) -> " + object.ReferenceEquals(r1, r3));
