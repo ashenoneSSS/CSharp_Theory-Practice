@@ -5,9 +5,8 @@ using System.Globalization;
 // Factory methods (easy examples)
 // =======================
 //
-// What it is
 // A factory method is a method that creates and returns an instance
-// You call UserName.Create(...) instead of new UserName(...)
+// You call "UserName.Create(...)" instead of "new UserName(...)"
 //
 // Why it is useful
 // Validation before an instance exists
