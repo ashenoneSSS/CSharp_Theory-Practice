@@ -1,83 +1,59 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-public class number_source
+namespace _24_12_30_data_types_literals
 {
-    public event Action<int> number_received;
-
-    public void process_text(string text)
+    internal class Program
     {
-        int i = 0;
-
-        while (i < text.Length)
+        static void Main(string[] args)
         {
-            while (i < text.Length && (text[i] == ' ' || text[i] == ',' || text[i] == ';'))
-                i++;
+            List<int> sourse_list = new List<int>() {1,5,2,8,3,7};
 
-            int sign = 1;
-            if (i < text.Length && text[i] == '-')
+            IEnumerable sourse_enumerable = sourse_list;
+            IEnumerator sourse_enumerator = sourse_enumerable.GetEnumerator();
+
+            
+
+            while(sourse_enumerator.MoveNext())
             {
-                sign = -1;
-                i++;
+                Console.WriteLine(sourse_enumerator.Current);
             }
 
-            bool has_digits = false;
-            int value = 0;
 
-            while (i < text.Length && text[i] >= '0' && text[i] <= '9')
-            {
-                has_digits = true;
-                value = value * 10 + (text[i] - '0');
-                i++;
-            }
 
-            if (has_digits)
-                number_received?.Invoke(sign * value);
-            else
-                i++;
+
+
+
         }
     }
 }
 
-public class stats
-{
-    private int sum;
 
-    public void on_number(int x)
-    {
-        sum += x;
-        Console.WriteLine($"STATS: sum = {sum}");
-    }
-}
+/*
+ * 
+ * 
+ * 
+ * List<int> sourse_list = new List<int>() { 1,2,3,4,5,6,7};
 
-public class program
-{
-    static void Main()
-    {
-        var source = new number_source();
-        var s = new stats();
+            List<int> new_list = sourse_list.Where(x => x % 3 == 0).ToList();
 
-        source.number_received += ui_show;
-        source.number_received += log_write;
-        source.number_received += s.on_number;
 
-        source.process_text("10, 20, -5;  3");
+            foreach(int element in sourse_list)
+            {
+                Console.Write(element + "    ");
+            }
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
 
-        source.number_received -= log_write;
 
-        source.process_text("7, 8");
-    }
-
-    static void ui_show(int x)
-    {
-        Console.WriteLine($"UI: last number = {x}");
-    }
-
-    static void log_write(int x)
-    {
-        Console.WriteLine($"LOG: got {x}");
-    }
-}
-
-// Microsoft Learn:
-// https://learn.microsoft.com/dotnet/csharp/programming-guide/events/
-// https://learn.microsoft.com/dotnet/api/system.action-1
