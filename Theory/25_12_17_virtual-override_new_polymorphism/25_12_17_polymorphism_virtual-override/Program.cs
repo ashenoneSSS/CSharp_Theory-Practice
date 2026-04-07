@@ -13,6 +13,16 @@ using System.Collections.Generic;
 // - Dog-only fields (like breed) are not lost, they are just inaccessible through the Mammal reference (hidden)
 
 // ===========================
+// NEW (method hiding)
+// ===========================
+// - new does NOT override
+// - new hides a base member with the same name
+// - The method that runs is chosen at compile time based on the VARIABLE type (not the real object type)
+// - You can hide both non-virtual and virtual members
+// - If you omit "new" when hiding, the compiler warns you
+// - You can still reach the base version by casting to the base type
+
+// ===========================
 // Example 1: Mammal -> Dog/Cat
 // ===========================
 class Mammal
@@ -113,6 +123,52 @@ class Circle : Shape
     }
 }
 
+// ===========================
+// Example 3: new hides a NON-VIRTUAL method
+// ===========================
+class ParentNonVirtual
+{
+    public void Hello()
+    {
+        Console.WriteLine("ParentNonVirtual.Hello");
+    }
+}
+
+class ChildNonVirtual : ParentNonVirtual
+{
+    public new void Hello()
+    {
+        Console.WriteLine("ChildNonVirtual.Hello (hidden)");
+    }
+}
+
+// ===========================
+// Example 4: new hides a VIRTUAL chain (override vs new)
+// ===========================
+class BaseVirtual
+{
+    public virtual void Ping()
+    {
+        Console.WriteLine("BaseVirtual.Ping");
+    }
+}
+
+class MidOverride : BaseVirtual
+{
+    public override void Ping()
+    {
+        Console.WriteLine("MidOverride.Ping (override)");
+    }
+}
+
+class DerivedHide : MidOverride
+{
+    public new void Ping()
+    {
+        Console.WriteLine("DerivedHide.Ping (new hides, NOT override)");
+    }
+}
+
 class ConsoleApp
 {
     static void Main()
@@ -173,10 +229,42 @@ class ConsoleApp
         // - One list type (Shape) can store many different derived objects
         // - One call (getArea) runs different code depending on the real object type
 
-        Console.ReadLine();
+        Console.WriteLine();
+
+        // ===========================
+        // Example 3 output (new hides NON-VIRTUAL)
+        // ===========================
+        ParentNonVirtual p1 = new ParentNonVirtual();
+        ParentNonVirtual p2 = new ChildNonVirtual();
+        ChildNonVirtual p3 = new ChildNonVirtual();
+
+        p1.Hello(); // ParentNonVirtual.Hello
+        p2.Hello(); // ParentNonVirtual.Hello (chosen by VARIABLE type ParentNonVirtual)
+        p3.Hello(); // ChildNonVirtual.Hello (hidden)
+
+        Console.WriteLine();
+
+        // ===========================
+        // Example 4 output (override chain + new hides at the end)
+        // ===========================
+        BaseVirtual v1 = new BaseVirtual();
+        BaseVirtual v2 = new MidOverride();
+        BaseVirtual v3 = new DerivedHide();
+        MidOverride v4 = new DerivedHide();
+        DerivedHide v5 = new DerivedHide();
+
+        v1.Ping(); // BaseVirtual.Ping
+        v2.Ping(); // MidOverride.Ping (override)
+        v3.Ping(); // MidOverride.Ping (override dispatch stops at MidOverride because DerivedHide did NOT override)
+        v4.Ping(); // MidOverride.Ping (variable type is MidOverride)
+        v5.Ping(); // DerivedHide.Ping (new hides)
+
+        // You can still call the override chain by casting
+        ((MidOverride)v5).Ping(); // MidOverride.Ping
     }
 }
 
 // Docs: https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/virtual
 // Docs: https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/override
 // Docs: https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/polymorphism
+// Docs: https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/new-modifier
