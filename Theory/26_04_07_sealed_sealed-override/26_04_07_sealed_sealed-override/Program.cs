@@ -149,7 +149,8 @@ public static class Program
 
         PipelineStep step = new LoggingNormalizeStep();
         Console.WriteLine(step.Execute("  HeLLo  ")); // Execute is sealed in NormalizeStep
-        Console.WriteLine(((NormalizeStep)step).Describe()); // Describe is overridable and overridden
+        Console.WriteLine(((NormalizeStep)step).Describe());
+        Console.WriteLine(((LoggingNormalizeStep)step).Describe()); // Same output cause Describe is overridden
     }
 }
 
