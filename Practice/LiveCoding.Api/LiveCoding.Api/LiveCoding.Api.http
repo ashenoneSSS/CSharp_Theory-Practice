@@ -1,0 +1,6 @@
+@LiveCoding.Api_HostAddress = http://localhost:5112
+
+GET {{LiveCoding.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
