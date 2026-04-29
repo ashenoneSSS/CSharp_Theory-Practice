@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using Hospital.Data;
+using Hospital.Services;
 
 namespace Hospital
 {
@@ -10,6 +13,10 @@ namespace Hospital
 
             builder.Services.AddControllers();
             builder.Services.AddOpenApi();
+
+            builder.Services.AddDbContext<HospitalDbContext>(options => 
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection_via_AddDbContext")));
+            builder.Services.AddScoped<PatientService>();
 
             var app = builder.Build();
 

@@ -7,7 +7,7 @@ namespace Hospital.Data
     {
         public DbSet<Patient> Patients { get; set; }
 
-        public HospitalDbContext(DbContextOptions general_options) : base(general_options)
+        public HospitalDbContext(DbContextOptions<HospitalDbContext> general_options) : base(general_options)
         {
         }
     }
