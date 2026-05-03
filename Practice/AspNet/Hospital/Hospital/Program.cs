@@ -13,10 +13,15 @@ namespace Hospital
 
             builder.Services.AddControllers();
             builder.Services.AddOpenApi();
+            builder.Services.AddEndpointsApiExplorer();
+
+            builder.Services.AddSwaggerGen();
+
 
             builder.Services.AddDbContext<HospitalDbContext>(options => 
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection_via_AddDbContext")));
             builder.Services.AddScoped<PatientService>();
+
 
             var app = builder.Build();
 
@@ -24,6 +29,9 @@ namespace Hospital
             if (app.Environment.IsDevelopment())
             {
                 app.MapOpenApi();
+
+                app.UseSwagger();
+                app.UseSwaggerUI();
             }
 
             app.UseHttpsRedirection();

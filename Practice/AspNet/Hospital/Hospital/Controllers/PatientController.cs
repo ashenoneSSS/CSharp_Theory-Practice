@@ -21,11 +21,6 @@ namespace Hospital.Controllers
         {
             List<Patient> pats = await _service.GetAllPatientsAsync();
 
-            if(pats.Count == 0)
-            {
-                return NotFound();
-            }
-
             return Ok(pats);
         }
 
