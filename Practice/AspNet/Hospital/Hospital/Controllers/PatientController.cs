@@ -48,6 +48,15 @@ namespace Hospital.Controllers
         [HttpPut("{id_to_update}")]
         public async Task<ActionResult> UpdatePatient([FromBody] PatientUpdateDto dto, int id_to_update)
         {
+            Patient? pat = await _service.GetPatientsByIdAsync(id_to_update);
+
+            if (pat == null)
+            {
+                return NotFound();
+            }
+
+
+
             await _service.UpdatePatientAsync(dto, id_to_update);
 
             return Ok();
@@ -56,6 +65,15 @@ namespace Hospital.Controllers
         [HttpDelete("{id_to_delete}")]
         public async Task<ActionResult> DeletePatient(int id_to_delete)
         {
+            Patient? pat = await _service.GetPatientsByIdAsync(id_to_delete);
+
+            if (pat == null)
+            {
+                return NotFound();
+            }
+
+
+
             await _service.DeletePatientAsync(id_to_delete);
 
             return Ok();
