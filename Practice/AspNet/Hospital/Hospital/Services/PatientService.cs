@@ -5,7 +5,16 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Hospital.Services
 {
-    public class PatientService
+    public interface IPatientService
+    {
+        Task<List<Patient>> GetAllPatientsAsync();
+        Task<Patient?> GetPatientByIdAsync(int id_to_get);
+        Task CreatePatientAsync(PatientCreateDto dto);
+        Task<bool> UpdatePatientAsync(PatientUpdateDto dto, int patient_to_update_id);
+        Task<bool> DeletePatientAsync(int patient_to_delete_id);
+    }
+
+    public class PatientService : IPatientService
     {
         private readonly HospitalDbContext _context;
         public PatientService(HospitalDbContext dbcontext)
@@ -18,12 +27,12 @@ namespace Hospital.Services
             return await _context.Patients.ToListAsync();
         }
 
-        public async Task<Patient?> GetPatientsByIdAsync(int id)
+        public async Task<Patient?> GetPatientByIdAsync(int id_to_get)
         {
-            return await _context.Patients.FirstOrDefaultAsync(pat => pat.Id == id);
+            return await _context.Patients.FirstOrDefaultAsync(pat => pat.Id == id_to_get);
         }
 
-        public async Task CreatePersonAsync(PatientCreateDto dto)
+        public async Task CreatePatientAsync(PatientCreateDto dto)
         {
             Patient pat = new Patient();
 
@@ -35,13 +44,13 @@ namespace Hospital.Services
             await _context.SaveChangesAsync();
         }
 
-        public async Task UpdatePatientAsync(PatientUpdateDto dto, int patient_to_update_id)
+        public async Task<bool> UpdatePatientAsync(PatientUpdateDto dto, int patient_to_update_id)
         {
             Patient? pat = await _context.Patients.FirstOrDefaultAsync(p => p.Id == patient_to_update_id);
 
             if (pat == null)
             {
-                return;
+                return false;
             }
 
             pat.Age = dto.Age;
@@ -49,20 +58,24 @@ namespace Hospital.Services
             pat.Diagnosis = dto.Diagnosis;
 
             await _context.SaveChangesAsync();
+
+            return true;
         }
 
-        public async Task DeletePatientAsync(int patient_to_delete_id)
+        public async Task<bool> DeletePatientAsync(int patient_to_delete_id)
         {
             Patient? pat = await _context.Patients.FirstOrDefaultAsync(p => p.Id == patient_to_delete_id);
 
             if (pat == null)
             {
-                return;
+                return false;
             }
 
             _context.Patients.Remove(pat);
 
             await _context.SaveChangesAsync();
+
+            return true;
         }
 
     }

@@ -9,9 +9,9 @@ namespace Hospital.Controllers
     [Route("patients")]
     public class PatientController : ControllerBase
     {
-        private readonly PatientService _service;
+        private readonly IPatientService _service;
 
-        public PatientController(PatientService service)
+        public PatientController(IPatientService service)
         {
             _service = service;
         }
@@ -27,7 +27,7 @@ namespace Hospital.Controllers
         [HttpGet("{id_of_patient}")]
         public async Task<ActionResult<Patient>> GetPatientById(int id_of_patient)
         {
-            Patient? pat = await _service.GetPatientsByIdAsync(id_of_patient);
+            Patient? pat = await _service.GetPatientByIdAsync(id_of_patient);
 
             if(pat == null)
             {
@@ -40,43 +40,35 @@ namespace Hospital.Controllers
         [HttpPost]
         public async Task<ActionResult> CreatePatient([FromBody] PatientCreateDto dto)
         {
-            await _service.CreatePersonAsync(dto);
+            await _service.CreatePatientAsync(dto);
 
-            return Ok();
+            return NoContent();
         }
 
         [HttpPut("{id_to_update}")]
         public async Task<ActionResult> UpdatePatient([FromBody] PatientUpdateDto dto, int id_to_update)
         {
-            Patient? pat = await _service.GetPatientsByIdAsync(id_to_update);
+            bool is_pat_exists = await _service.UpdatePatientAsync(dto, id_to_update);
 
-            if (pat == null)
+            if(!is_pat_exists)
             {
                 return NotFound();
             }
 
-
-
-            await _service.UpdatePatientAsync(dto, id_to_update);
-
-            return Ok();
+            return NoContent();
         }
 
         [HttpDelete("{id_to_delete}")]
         public async Task<ActionResult> DeletePatient(int id_to_delete)
         {
-            Patient? pat = await _service.GetPatientsByIdAsync(id_to_delete);
+            bool is_pat_exists = await _service.DeletePatientAsync(id_to_delete);
 
-            if (pat == null)
+            if(!is_pat_exists)
             {
                 return NotFound();
             }
 
-
-
-            await _service.DeletePatientAsync(id_to_delete);
-
-            return Ok();
+            return NoContent();
         }
 
     }
