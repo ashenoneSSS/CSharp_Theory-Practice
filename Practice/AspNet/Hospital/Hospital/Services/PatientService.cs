@@ -14,12 +14,16 @@ namespace Hospital.Services
         Task<bool> DeletePatientAsync(int patient_to_delete_id);
     }
 
+
     public class PatientService : IPatientService
     {
         private readonly HospitalDbContext _context;
-        public PatientService(HospitalDbContext dbcontext)
+        private readonly ILogger<PatientService> _logger;
+
+        public PatientService(HospitalDbContext dbcontext, ILogger<PatientService> logger)
         {
             _context = dbcontext;
+            _logger = logger;
         }
 
         public async Task<List<Patient>> GetAllPatientsAsync()
