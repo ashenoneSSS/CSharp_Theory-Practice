@@ -28,12 +28,14 @@ namespace Hospital.Services
 
         public async Task<List<Patient>> GetAllPatientsAsync()
         {
-            return await _context.Patients.ToListAsync();
+            IQueryable<Patient> query = _context.Patients;
+
+            return await query.ToListAsync();
         }
 
         public async Task<Patient?> GetPatientByIdAsync(int id_to_get)
         {
-            return await _context.Patients.FirstOrDefaultAsync(pat => pat.Id == id_to_get);
+            return await _context.Patients.AsNoTracking().FirstOrDefaultAsync(pat => pat.Id == id_to_get);
         }
 
         public async Task CreatePatientAsync(PatientCreateDto dto)
@@ -46,6 +48,8 @@ namespace Hospital.Services
 
             await _context.Patients.AddAsync(pat);
             await _context.SaveChangesAsync();
+
+            _logger.LogInformation("Patient with id:{LogerPatientId} Created Successefuly", pat.Id);
         }
 
         public async Task<bool> UpdatePatientAsync(PatientUpdateDto dto, int patient_to_update_id)
@@ -54,6 +58,7 @@ namespace Hospital.Services
 
             if (pat == null)
             {
+                _logger.LogWarning("Patient with id:{LogerPatientId} doesn`t exists", patient_to_update_id);
                 return false;
             }
 
@@ -62,6 +67,8 @@ namespace Hospital.Services
             pat.Diagnosis = dto.Diagnosis;
 
             await _context.SaveChangesAsync();
+
+            _logger.LogInformation("Patient with id:{LogerPatientId} Updated Successefuly", pat.Id);
 
             return true;
         }
@@ -72,12 +79,15 @@ namespace Hospital.Services
 
             if (pat == null)
             {
+                _logger.LogWarning("Patient with id:{LogerPatientId} doesn`t exists", patient_to_delete_id);
                 return false;
             }
 
             _context.Patients.Remove(pat);
 
             await _context.SaveChangesAsync();
+
+            _logger.LogInformation("Patient with id:{LogerPatientId} Deleted Successefuly", pat.Id);
 
             return true;
         }
