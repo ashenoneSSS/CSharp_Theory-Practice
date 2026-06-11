@@ -10,6 +10,7 @@ namespace Hospital.Services
         Task<List<Patient>> GetAllPatientsAsync();
         Task<Patient?> GetPatientByIdAsync(int id_to_get);
         Task CreatePatientAsync(PatientCreateDto dto);
+        Task CreatePatientListAsync(List<PatientCreateDto> dto_list);
         Task<bool> UpdatePatientAsync(PatientUpdateDto dto, int patient_to_update_id);
         Task<bool> DeletePatientAsync(int patient_to_delete_id);
     }
@@ -31,6 +32,9 @@ namespace Hospital.Services
             IQueryable<Patient> query = _context.Patients;
 
             return await query.ToListAsync();
+
+            // its literally same thing as:
+            // return await _context.Patients.AsNoTracking().ToListAsync();
         }
 
         public async Task<Patient?> GetPatientByIdAsync(int id_to_get)
@@ -50,6 +54,30 @@ namespace Hospital.Services
             await _context.SaveChangesAsync();
 
             _logger.LogInformation("Patient with id:{LogerPatientId} Created Successefuly", pat.Id);
+        }
+
+        public async Task CreatePatientListAsync(List<PatientCreateDto> dto_list)
+        {
+            List<Patient> pats = new List<Patient>();
+
+            for (int i = 0; i < dto_list.Count; i++)
+            {
+                Patient pat = new Patient();
+
+                pat.Age = dto_list[i].Age;
+                pat.FullName = dto_list[i].FullName;
+                pat.Diagnosis = dto_list[i].Diagnosis;
+
+                pats.Add(pat);
+            }
+
+            await _context.Patients.AddRangeAsync(pats);
+            await _context.SaveChangesAsync();
+
+            foreach(Patient pat in pats)
+            {
+                _logger.LogInformation("Patient with id:{PatientId} Created Successefuly", pat.Id);
+            }
         }
 
         public async Task<bool> UpdatePatientAsync(PatientUpdateDto dto, int patient_to_update_id)

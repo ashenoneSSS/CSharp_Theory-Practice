@@ -45,6 +45,14 @@ namespace Hospital.Controllers
             return NoContent();
         }
 
+        [HttpPost("ListAdding")]
+        public async Task<ActionResult> CreateListOfPatients([FromBody] List<PatientCreateDto> dto_list)
+        {
+            await _service.CreatePatientListAsync(dto_list);
+
+            return NoContent();
+        }
+
         [HttpPut("{id_to_update}")]
         public async Task<ActionResult> UpdatePatient([FromBody] PatientUpdateDto dto, int id_to_update)
         {
