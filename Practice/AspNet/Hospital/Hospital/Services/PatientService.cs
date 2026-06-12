@@ -1,13 +1,14 @@
 ﻿using Hospital.Dto;
 using Hospital.Data;
 using Hospital.Models;
+using Hospital.Enums;
 using Microsoft.EntityFrameworkCore;
 
 namespace Hospital.Services
 {
     public interface IPatientService
     {
-        Task<List<Patient>> GetAllPatientsAsync();
+        Task<List<Patient>> GetAllPatientsAsync(string? diagnosis, PatientSortBy? sort_by, string? part_of_name);
         Task<Patient?> GetPatientByIdAsync(int id_to_get);
         Task CreatePatientAsync(PatientCreateDto dto);
         Task CreatePatientListAsync(List<PatientCreateDto> dto_list);
@@ -27,14 +28,37 @@ namespace Hospital.Services
             _logger = logger;
         }
 
-        public async Task<List<Patient>> GetAllPatientsAsync()
+        public async Task<List<Patient>> GetAllPatientsAsync(string? diagnosis, PatientSortBy? sort_by, string? part_of_name)
         {
-            IQueryable<Patient> query = _context.Patients;
+            IQueryable<Patient> query = _context.Patients.AsNoTracking();
+
+
+            if(!string.IsNullOrWhiteSpace(diagnosis))
+            {
+                query = query.Where(pat => pat.Diagnosis == diagnosis);
+            }
+            if(!string.IsNullOrWhiteSpace(part_of_name))
+            {
+                query = query.Where(pat => pat.FullName.Contains(part_of_name));
+            }
+            if (sort_by != null)
+            {
+                switch(sort_by)
+                {
+                    case PatientSortBy.Enum_Id:
+                        query = query.OrderBy(pat => pat.Id);
+                        break;
+                    case PatientSortBy.Enum_Age:
+                        query = query.OrderBy(pat => pat.FullName);
+                        break;
+                    case PatientSortBy.Enum_Name:
+                        query = query.OrderBy(pat => pat.FullName);
+                        break;
+                }
+            }
+
 
             return await query.ToListAsync();
-
-            // its literally same thing as:
-            // return await _context.Patients.AsNoTracking().ToListAsync();
         }
 
         public async Task<Patient?> GetPatientByIdAsync(int id_to_get)
@@ -74,7 +98,7 @@ namespace Hospital.Services
             await _context.Patients.AddRangeAsync(pats);
             await _context.SaveChangesAsync();
 
-            foreach(Patient pat in pats)
+            foreach (Patient pat in pats)
             {
                 _logger.LogInformation("Patient with id:{PatientId} Created Successefuly", pat.Id);
             }

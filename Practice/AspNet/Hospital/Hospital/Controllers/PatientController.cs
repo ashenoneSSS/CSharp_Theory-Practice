@@ -1,7 +1,8 @@
-using Microsoft.AspNetCore.Mvc;
-using Hospital.Services;
-using Hospital.Models;
 using Hospital.Dto;
+using Hospital.Enums;
+using Hospital.Models;
+using Hospital.Services;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Hospital.Controllers
 {
@@ -17,9 +18,9 @@ namespace Hospital.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<Patient>>> GetPatients()
+        public async Task<ActionResult<List<Patient>>> GetPatients(string? diagnosis, PatientSortBy? sort_by, string? part_of_name)
         {
-            List<Patient> pats = await _service.GetAllPatientsAsync();
+            List<Patient> pats = await _service.GetAllPatientsAsync(diagnosis, sort_by, part_of_name);
 
             return Ok(pats);
         }
@@ -29,7 +30,7 @@ namespace Hospital.Controllers
         {
             Patient? pat = await _service.GetPatientByIdAsync(id_of_patient);
 
-            if(pat == null)
+            if (pat == null)
             {
                 return NotFound();
             }
@@ -58,7 +59,7 @@ namespace Hospital.Controllers
         {
             bool is_pat_exists = await _service.UpdatePatientAsync(dto, id_to_update);
 
-            if(!is_pat_exists)
+            if (!is_pat_exists)
             {
                 return NotFound();
             }
@@ -71,7 +72,7 @@ namespace Hospital.Controllers
         {
             bool is_pat_exists = await _service.DeletePatientAsync(id_to_delete);
 
-            if(!is_pat_exists)
+            if (!is_pat_exists)
             {
                 return NotFound();
             }
