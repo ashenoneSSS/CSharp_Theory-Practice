@@ -18,9 +18,14 @@ namespace Hospital.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<Patient>>> GetPatients(string? diagnosis, PatientSortBy? sort_by, string? part_of_name)
+        public async Task<ActionResult<List<Patient>>> GetPatients(
+            string? diagnosis, 
+            PatientSortBy? sort_by, 
+            string? part_of_name,
+            int page_size,
+            int pages)
         {
-            List<Patient> pats = await _service.GetAllPatientsAsync(diagnosis, sort_by, part_of_name);
+            List<Patient> pats = await _service.GetAllPatientsAsync(diagnosis, sort_by, part_of_name, page_size, pages);
 
             return Ok(pats);
         }

@@ -8,7 +8,7 @@ namespace Hospital.Services
 {
     public interface IPatientService
     {
-        Task<List<Patient>> GetAllPatientsAsync(string? diagnosis, PatientSortBy? sort_by, string? part_of_name);
+        Task<List<Patient>> GetAllPatientsAsync(string? diagnosis, PatientSortBy? sort_by, string? part_of_name, int pageSize = 20, int pages = 1);
         Task<Patient?> GetPatientByIdAsync(int id_to_get);
         Task CreatePatientAsync(PatientCreateDto dto);
         Task CreatePatientListAsync(List<PatientCreateDto> dto_list);
@@ -28,34 +28,72 @@ namespace Hospital.Services
             _logger = logger;
         }
 
-        public async Task<List<Patient>> GetAllPatientsAsync(string? diagnosis, PatientSortBy? sort_by, string? part_of_name)
+
+        public async Task<List<Patient>> GetAllPatientsAsync(
+            string? diagnosis,
+            PatientSortBy? sort_by,
+            string? part_of_name,
+            int pageSize = 20,
+            int pages = 1)
         {
             IQueryable<Patient> query = _context.Patients.AsNoTracking();
 
 
-            if(!string.IsNullOrWhiteSpace(diagnosis))
+            if (!string.IsNullOrWhiteSpace(diagnosis))
             {
-                query = query.Where(pat => pat.Diagnosis == diagnosis);
+                query = query
+                    .Where(pat => pat.Diagnosis == diagnosis);
             }
-            if(!string.IsNullOrWhiteSpace(part_of_name))
+            if (!string.IsNullOrWhiteSpace(part_of_name))
             {
-                query = query.Where(pat => pat.FullName.Contains(part_of_name));
+                query = query
+                    .Where(pat => pat.FullName
+                    .Contains(part_of_name));
             }
             if (sort_by != null)
             {
-                switch(sort_by)
+                switch (sort_by)
                 {
                     case PatientSortBy.Enum_Id:
-                        query = query.OrderBy(pat => pat.Id);
+                        query = query
+                            .OrderBy(pat => pat.Id);
                         break;
+
                     case PatientSortBy.Enum_Age:
-                        query = query.OrderBy(pat => pat.FullName);
+                        query = query
+                            .OrderBy(pat => pat.Age);
                         break;
+
                     case PatientSortBy.Enum_Name:
-                        query = query.OrderBy(pat => pat.FullName);
+                        query = query
+                            .OrderBy(pat => pat.FullName);
                         break;
                 }
             }
+
+
+            // Pagination
+
+            if (pages < 1)
+            {
+                pages = 1;
+            }
+            if (pageSize <= 0)
+            {
+                pageSize = 20;
+            }
+            if (pageSize > 100)
+            {
+                pageSize = 100;
+            }
+
+            int skip_value = ((pages - 1) * pageSize);
+            int take_value = pageSize;
+
+            query = query
+                    .Skip(skip_value)
+                    .Take(take_value);
+
 
 
             return await query.ToListAsync();
@@ -65,6 +103,7 @@ namespace Hospital.Services
         {
             return await _context.Patients.AsNoTracking().FirstOrDefaultAsync(pat => pat.Id == id_to_get);
         }
+
 
         public async Task CreatePatientAsync(PatientCreateDto dto)
         {
@@ -104,6 +143,7 @@ namespace Hospital.Services
             }
         }
 
+
         public async Task<bool> UpdatePatientAsync(PatientUpdateDto dto, int patient_to_update_id)
         {
             Patient? pat = await _context.Patients.FirstOrDefaultAsync(p => p.Id == patient_to_update_id);
@@ -125,6 +165,7 @@ namespace Hospital.Services
             return true;
         }
 
+
         public async Task<bool> DeletePatientAsync(int patient_to_delete_id)
         {
             Patient? pat = await _context.Patients.FirstOrDefaultAsync(p => p.Id == patient_to_delete_id);
@@ -143,6 +184,5 @@ namespace Hospital.Services
 
             return true;
         }
-
     }
 }
