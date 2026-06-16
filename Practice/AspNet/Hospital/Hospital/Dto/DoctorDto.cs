@@ -2,16 +2,14 @@
 
 namespace Hospital.Dto
 {
-    public class PatientUpdateDto
+    public class DoctorDto
     {
         [Required]
         [MaxLength(100)]
         public string FullName { get; set; } = null!;
-
-        [Range(0, 120)]
-        public int Age { get; set; }
-
         [MinLength(1)]
-        public string Diagnosis { get; set; } = null!;
+        public string? Specialization { get; set; }
+        [Range(1, int.MaxValue)]
+        public int DepartmentId { get; set; }
     }
 }

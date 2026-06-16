@@ -2,7 +2,7 @@
 
 namespace Hospital.Dto
 {
-    public class PatientCreateDto
+    public class PatientDto
     {
         [Required]
         [MaxLength(100)]

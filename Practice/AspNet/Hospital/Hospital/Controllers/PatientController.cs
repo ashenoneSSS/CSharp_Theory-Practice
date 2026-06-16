@@ -44,7 +44,7 @@ namespace Hospital.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> CreatePatient([FromBody] PatientCreateDto dto)
+        public async Task<ActionResult> CreatePatient([FromBody] PatientDto dto)
         {
             await _service.CreatePatientAsync(dto);
 
@@ -52,7 +52,7 @@ namespace Hospital.Controllers
         }
 
         [HttpPost("ListAdding")]
-        public async Task<ActionResult> CreateListOfPatients([FromBody] List<PatientCreateDto> dto_list)
+        public async Task<ActionResult> CreateListOfPatients([FromBody] List<PatientDto> dto_list)
         {
             await _service.CreatePatientListAsync(dto_list);
 
@@ -60,7 +60,7 @@ namespace Hospital.Controllers
         }
 
         [HttpPut("{id_to_update}")]
-        public async Task<ActionResult> UpdatePatient([FromBody] PatientUpdateDto dto, int id_to_update)
+        public async Task<ActionResult> UpdatePatient([FromBody] PatientDto dto, int id_to_update)
         {
             bool is_pat_exists = await _service.UpdatePatientAsync(dto, id_to_update);
 

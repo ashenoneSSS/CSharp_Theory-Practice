@@ -10,9 +10,9 @@ namespace Hospital.Services
     {
         Task<List<Patient>> GetAllPatientsAsync(string? diagnosis, PatientSortBy? sort_by, string? part_of_name, int pageSize = 20, int pages = 1);
         Task<Patient?> GetPatientByIdAsync(int id_to_get);
-        Task CreatePatientAsync(PatientCreateDto dto);
-        Task CreatePatientListAsync(List<PatientCreateDto> dto_list);
-        Task<bool> UpdatePatientAsync(PatientUpdateDto dto, int patient_to_update_id);
+        Task CreatePatientAsync(PatientDto dto);
+        Task CreatePatientListAsync(List<PatientDto> dto_list);
+        Task<bool> UpdatePatientAsync(PatientDto dto, int patient_to_update_id);
         Task<bool> DeletePatientAsync(int patient_to_delete_id);
     }
 
@@ -105,7 +105,7 @@ namespace Hospital.Services
         }
 
 
-        public async Task CreatePatientAsync(PatientCreateDto dto)
+        public async Task CreatePatientAsync(PatientDto dto)
         {
             Patient pat = new Patient();
 
@@ -119,7 +119,7 @@ namespace Hospital.Services
             _logger.LogInformation("Patient with id:{LogerPatientId} Created Successefuly", pat.Id);
         }
 
-        public async Task CreatePatientListAsync(List<PatientCreateDto> dto_list)
+        public async Task CreatePatientListAsync(List<PatientDto> dto_list)
         {
             List<Patient> pats = new List<Patient>();
 
@@ -144,7 +144,7 @@ namespace Hospital.Services
         }
 
 
-        public async Task<bool> UpdatePatientAsync(PatientUpdateDto dto, int patient_to_update_id)
+        public async Task<bool> UpdatePatientAsync(PatientDto dto, int patient_to_update_id)
         {
             Patient? pat = await _context.Patients.FirstOrDefaultAsync(p => p.Id == patient_to_update_id);
 
