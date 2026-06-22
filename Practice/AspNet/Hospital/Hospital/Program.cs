@@ -18,9 +18,11 @@ namespace Hospital
             builder.Services.AddSwaggerGen();
 
 
-            builder.Services.AddDbContext<HospitalDbContext>(options => 
+            builder.Services.AddDbContext<HospitalDbContext>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection_via_AddDbContext")));
-            builder.Services.AddScoped<IPatientService,PatientService>();
+
+            builder.Services.AddScoped<IPatientService, PatientService>();
+            builder.Services.AddScoped<IDoctorService, DoctorService>();
 
 
             var app = builder.Build();

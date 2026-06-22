@@ -19,11 +19,11 @@ namespace Hospital.Controllers
 
         [HttpGet]
         public async Task<ActionResult<List<Patient>>> GetPatients(
-            string? diagnosis, 
-            PatientSortBy? sort_by, 
-            string? part_of_name,
-            int page_size,
-            int pages)
+            [FromQuery] string? diagnosis,
+            [FromQuery] PatientSortBy? sort_by,
+            [FromQuery] string? part_of_name,
+            [FromQuery] int page_size = 20,
+            [FromQuery] int pages = 1)
         {
             List<Patient> pats = await _service.GetAllPatientsAsync(diagnosis, sort_by, part_of_name, page_size, pages);
 
