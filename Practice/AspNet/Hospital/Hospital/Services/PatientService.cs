@@ -76,7 +76,7 @@ namespace Hospital.Services
                 pageSize = 100;
             }
 
-            int skip_value = ((pages - 1) * pageSize);
+            int skip_value = (pages - 1) * pageSize;
             int take_value = pageSize;
 
             query = query
