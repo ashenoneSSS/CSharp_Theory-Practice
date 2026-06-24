@@ -1,4 +1,4 @@
-﻿using Hospital.Dto;
+using Hospital.Dto;
 using Hospital.Data;
 using Hospital.Models;
 using Hospital.Enums;
@@ -26,7 +26,6 @@ namespace Hospital.Services
             int pages = 1)
         {
             IQueryable<Patient> query = _context.Patients.AsNoTracking();
-
 
             if (!string.IsNullOrWhiteSpace(diagnosis))
             {
@@ -60,9 +59,6 @@ namespace Hospital.Services
                 }
             }
 
-
-            // Pagination
-
             if (pages < 1)
             {
                 pages = 1;
@@ -84,9 +80,9 @@ namespace Hospital.Services
                     .Take(take_value);
 
 
-
             return await query.ToListAsync();
         }
+
 
         public async Task<Patient?> GetPatientByIdAsync(int id_to_get)
         {
@@ -107,6 +103,7 @@ namespace Hospital.Services
 
             _logger.LogInformation("Patient with id:{LogerPatientId} Created Successefuly", pat.Id);
         }
+
 
         public async Task CreatePatientListAsync(List<PatientDto> dto_list)
         {

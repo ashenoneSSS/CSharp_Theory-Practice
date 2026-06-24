@@ -16,6 +16,7 @@ namespace Hospital.Controllers
             _service = service;
         }
 
+
         [HttpGet]
         public async Task<ActionResult<List<Department>>> GetDepartments(
             [FromQuery] string? name,
@@ -27,6 +28,7 @@ namespace Hospital.Controllers
 
             return Ok(deps);
         }
+
 
         [HttpGet("{id_of_department}")]
         public async Task<ActionResult<Department>> GetDepartmentById(int id_of_department)
@@ -41,6 +43,7 @@ namespace Hospital.Controllers
             return Ok(dep);
         }
 
+
         [HttpPost]
         public async Task<ActionResult> CreateDepartment([FromBody] DepartmentDto dto)
         {
@@ -48,6 +51,16 @@ namespace Hospital.Controllers
 
             return NoContent();
         }
+
+
+        [HttpPost("ListAdding")]
+        public async Task<ActionResult> CreateListOfDepartments([FromBody] List<DepartmentDto> dto_list)
+        {
+            await _service.CreateDepartmentListAsync(dto_list);
+
+            return NoContent();
+        }
+
 
         [HttpPut("{id_to_update}")]
         public async Task<ActionResult> UpdateDepartment([FromBody] DepartmentDto dto, int id_to_update)
@@ -61,6 +74,7 @@ namespace Hospital.Controllers
 
             return NoContent();
         }
+
 
         [HttpDelete("{id_to_delete}")]
         public async Task<ActionResult> DeleteDepartment(int id_to_delete)

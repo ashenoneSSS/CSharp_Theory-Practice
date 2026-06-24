@@ -17,6 +17,7 @@ namespace Hospital.Controllers
             _service = service;
         }
 
+
         [HttpGet]
         public async Task<ActionResult<List<Patient>>> GetPatients(
             [FromQuery] string? diagnosis,
@@ -29,6 +30,7 @@ namespace Hospital.Controllers
 
             return Ok(pats);
         }
+
 
         [HttpGet("{id_of_patient}")]
         public async Task<ActionResult<Patient>> GetPatientById(int id_of_patient)
@@ -43,6 +45,7 @@ namespace Hospital.Controllers
             return Ok(pat);
         }
 
+
         [HttpPost]
         public async Task<ActionResult> CreatePatient([FromBody] PatientDto dto)
         {
@@ -51,6 +54,7 @@ namespace Hospital.Controllers
             return NoContent();
         }
 
+
         [HttpPost("ListAdding")]
         public async Task<ActionResult> CreateListOfPatients([FromBody] List<PatientDto> dto_list)
         {
@@ -58,6 +62,7 @@ namespace Hospital.Controllers
 
             return NoContent();
         }
+
 
         [HttpPut("{id_to_update}")]
         public async Task<ActionResult> UpdatePatient([FromBody] PatientDto dto, int id_to_update)
@@ -71,6 +76,7 @@ namespace Hospital.Controllers
 
             return NoContent();
         }
+
 
         [HttpDelete("{id_to_delete}")]
         public async Task<ActionResult> DeletePatient(int id_to_delete)

@@ -1,4 +1,4 @@
-﻿using Hospital.Dto;
+using Hospital.Dto;
 using Hospital.Data;
 using Hospital.Models;
 using Hospital.Enums;
@@ -17,6 +17,7 @@ namespace Hospital.Services
             _logger = logger;
         }
 
+
         public async Task<List<Department>> GetAllDepartmentAsync(
             string? name,
             bool sort_by_name = false,
@@ -25,12 +26,10 @@ namespace Hospital.Services
         {
             IQueryable<Department> query = _context.Departments.AsNoTracking();
 
-
             if (!string.IsNullOrWhiteSpace(name))
             {
                 query = query.Where(dep => dep.Name == name);
             }
-
 
             if (!sort_by_name)
             {
@@ -40,7 +39,6 @@ namespace Hospital.Services
             {
                 query = query.OrderBy(dep => dep.Name);
             }
-
 
             if (pages < 1)
             {
@@ -54,7 +52,6 @@ namespace Hospital.Services
             {
                 pageSize = 100;
             }
-
 
             int skip_value = (pages - 1) * pageSize;
             int take_value = pageSize;
@@ -73,6 +70,7 @@ namespace Hospital.Services
             return await _context.Departments.AsNoTracking().FirstOrDefaultAsync(dep => dep.Id == id_to_get);
         }
 
+
         public async Task CreateDepartmentAsync(DepartmentDto dto)
         {
             Department dep = new Department();
@@ -84,6 +82,30 @@ namespace Hospital.Services
 
             _logger.LogInformation("Department with id:{LogerDepartmentId} Created Successefuly", dep.Id);
         }
+
+
+        public async Task CreateDepartmentListAsync(List<DepartmentDto> dto_list)
+        {
+            List<Department> deps = new List<Department>();
+
+            for (int i = 0; i < dto_list.Count; i++)
+            {
+                Department dep = new Department();
+
+                dep.Name = dto_list[i].Name;
+
+                deps.Add(dep);
+            }
+
+            await _context.Departments.AddRangeAsync(deps);
+            await _context.SaveChangesAsync();
+
+            foreach (Department dep in deps)
+            {
+                _logger.LogInformation("Department with id:{DepartmentId} Created Successefuly", dep.Id);
+            }
+        }
+
 
         public async Task<bool> UpdateDepartmentAsync(DepartmentDto dto, int department_to_update_id)
         {
@@ -103,11 +125,12 @@ namespace Hospital.Services
             return true;
         }
 
+
         public async Task<bool> DeleteDepartmentAsync(int id_to_delete)
         {
-            Department? dep = await _context.Departments.FirstOrDefaultAsync(dep=>dep.Id == id_to_delete);
+            Department? dep = await _context.Departments.FirstOrDefaultAsync(dep => dep.Id == id_to_delete);
 
-            if(dep == null)
+            if (dep == null)
             {
                 _logger.LogWarning("Department with id:{LogerDepartmentId} doesn`t exists", id_to_delete);
                 return false;
@@ -120,6 +143,5 @@ namespace Hospital.Services
 
             return true;
         }
-
     }
 }

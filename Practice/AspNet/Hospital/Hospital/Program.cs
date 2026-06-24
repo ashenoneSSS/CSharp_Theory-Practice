@@ -24,6 +24,7 @@ namespace Hospital
             builder.Services.AddScoped<IPatientService, PatientService>();
             builder.Services.AddScoped<IDoctorService, DoctorService>();
             builder.Services.AddScoped<IDepartmentService, DepartmentService>();
+            builder.Services.AddScoped<IAppointmentService, AppointmentService>();
 
 
             var app = builder.Build();

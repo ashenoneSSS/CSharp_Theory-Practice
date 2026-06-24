@@ -1,4 +1,4 @@
-﻿using Hospital.Dto;
+using Hospital.Dto;
 using Hospital.Enums;
 using Hospital.Models;
 using Hospital.Services;
@@ -17,6 +17,7 @@ namespace Hospital.Controllers
             _service = service;
         }
 
+
         [HttpGet]
         public async Task<ActionResult<List<Doctor>>> GetAllDoctors(
             [FromQuery] string? specialization,
@@ -29,6 +30,7 @@ namespace Hospital.Controllers
 
             return Ok(docs);
         }
+
 
         [HttpGet("{id_of_doctor}")]
         public async Task<ActionResult<Doctor?>> GetDoctorById(int id_of_doctor)
@@ -43,6 +45,7 @@ namespace Hospital.Controllers
             return Ok(doc);
         }
 
+
         [HttpPost]
         public async Task<ActionResult> CreateDoctor([FromBody] DoctorDto dto)
         {
@@ -50,6 +53,7 @@ namespace Hospital.Controllers
 
             return NoContent();
         }
+
 
         [HttpPost("ListAdding")]
         public async Task<ActionResult> CreateListOfDoctors([FromBody] List<DoctorDto> dto_list)
@@ -59,12 +63,13 @@ namespace Hospital.Controllers
             return NoContent();
         }
 
-        [HttpPut("{id_to_update}")]
-        public async Task<ActionResult> UpdatePatient([FromBody] DoctorDto dto, int id_to_update)
-        {
-            bool is_pat_exists = await _service.UpdateDoctorAsync(dto, id_to_update);
 
-            if (!is_pat_exists)
+        [HttpPut("{id_to_update}")]
+        public async Task<ActionResult> UpdateDoctor([FromBody] DoctorDto dto, int id_to_update)
+        {
+            bool is_doc_exists = await _service.UpdateDoctorAsync(dto, id_to_update);
+
+            if (!is_doc_exists)
             {
                 return NotFound();
             }
@@ -72,12 +77,13 @@ namespace Hospital.Controllers
             return NoContent();
         }
 
+
         [HttpDelete("{id_to_delete}")]
         public async Task<ActionResult> DeleteDoctor(int id_to_delete)
         {
-            bool is_pat_exists = await _service.DeleteDoctorAsync(id_to_delete);
+            bool is_doc_exists = await _service.DeleteDoctorAsync(id_to_delete);
 
-            if (!is_pat_exists)
+            if (!is_doc_exists)
             {
                 return NotFound();
             }

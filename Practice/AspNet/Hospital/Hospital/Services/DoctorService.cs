@@ -1,4 +1,4 @@
-﻿using Hospital.Dto;
+using Hospital.Dto;
 using Hospital.Data;
 using Hospital.Models;
 using Hospital.Enums;
@@ -54,9 +54,6 @@ namespace Hospital.Services
                 }
             }
 
-
-            // Pagination
-
             if (pages < 1)
             {
                 pages = 1;
@@ -78,7 +75,6 @@ namespace Hospital.Services
                     .Take(take_value);
 
 
-
             return await query.ToListAsync();
         }
 
@@ -87,7 +83,7 @@ namespace Hospital.Services
         {
             return await _context.Doctors.AsNoTracking().FirstOrDefaultAsync(doc => doc.Id == id_to_get);
         }
-        
+
 
         public async Task CreateDoctorAsync(DoctorDto dto)
         {
@@ -102,6 +98,7 @@ namespace Hospital.Services
 
             _logger.LogInformation("Doctor with id:{LogerDoctorId} Created Successefuly", doc.Id);
         }
+
 
         public async Task CreateDoctorListAsync(List<DoctorDto> dto_list)
         {
@@ -152,7 +149,7 @@ namespace Hospital.Services
 
         public async Task<bool> DeleteDoctorAsync(int doctor_to_delete_id)
         {
-            Doctor? doc = await _context.Doctors.FirstOrDefaultAsync(p => p.Id == doctor_to_delete_id);
+            Doctor? doc = await _context.Doctors.FirstOrDefaultAsync(doc => doc.Id == doctor_to_delete_id);
 
             if (doc == null)
             {
